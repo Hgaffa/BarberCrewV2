@@ -32,7 +32,7 @@
 	<link href="css/footer.css" rel="stylesheet">
 
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body style="background_colour:#0e2141 !important;">
     
@@ -111,15 +111,9 @@
         <div class="col-lg-8 mx-auto">
           <div id="bookapp-reviews-widget" />
           <script id="reviews_script" type="text/javascript">
-            var check = localStorage.getItem("site");
-            if (check == "Twyford"){
-              check = "barbercrew";
-            } else {
-              check = "barbercrew-wargrave";
-            }
             !function(e,t,n){var u=n.queue||[];e.BookAppWidgetReady=n=function(e){n.queue.push(e)},n.queue=u;var o="script",a=t.createElement(o),i=t.getElementsByTagName(o)[0];a.src="https://cdn.book.app/embed/v1.js",a.type="text/javascript",a.async=!0,a.addEventListener("load",function(){for(;n.queue.length;)n.queue.shift()()},!1),i.parentNode.insertBefore(a,i)}(window,document,window.BookAppWidgetReady||function(){});
             BookAppWidgetReady(function () {
-            	BookApp.widget('#bookapp-reviews-widget', check, { initial: BookApp.Page.Reviews });
+            	BookApp.widget('#bookapp-reviews-widget', 'barbercrew', { initial: BookApp.Page.Reviews });
             });
           </script>
           </div>
