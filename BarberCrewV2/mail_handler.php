@@ -90,7 +90,7 @@ if($_POST) {
 
 
 
-    $recipient = "hgaffa@gmail.com";
+    $recipient = "info@barbercrew.co.uk";
 
 
 
