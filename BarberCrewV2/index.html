@@ -11,12 +11,10 @@
     <meta name="keywords" content="Barber, Haircut, Ladies Hairdresser, Men's Hair, Skin Fade, Barbers Twyford, Barbers Wokingham, Turkish Shave, Sunbed, Face Waxing">
     <meta name="author" content="Barber Crew">
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:site_name" content="Barber Crew" /> <!-- website name -->
+	<meta property="og:site" content="barbercrew.co.uk" /> <!-- website link -->
+	<meta property="og:title" content="Barber Crew - Unisex Hair, Luxury Shaves & Tanning"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Unisex Barbers in Twyford & Wargrave, RG10. We provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers!" /> <!-- description shown in the actual shared post -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
@@ -34,7 +32,7 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body>
+<body onload="setVid()">
     
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
@@ -117,13 +115,57 @@
         </div> <!-- end of header-content -->
         
         <!-- Video Background -->
-        <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
-            <source src="images/background_vid.mp4" type="video/mp4" />
+        <video autoplay loop muted id="video-background" playsinline>
+            <!--<source id="video-background-source" type="video/mp4" />-->
         </video>
         <!-- end of video background -->
 
     </header> <!-- end of header -->
     <!-- end of header -->
+
+    <!-- Video Update Script -->
+    <script>
+        /* JavaScript */
+        var w = window.matchMedia("(max-width: 700px)");
+        var vid = document.getElementById("video-background");
+        var source = document.createElement("source");
+        source.id = "hvid";
+        source.setAttribute("type", "video/mp4");
+        vid.appendChild(source);
+
+        if (w.matches) {
+            vid.pause();
+            source.removeAttribute("src");
+            source.setAttribute("src", "images/background_vid_mobile.mp4");
+            vid.load();
+            vid.play();
+        } else {
+            vid.pause();
+            source.removeAttribute("src");
+            source.setAttribute("src", "images/background_vid.mp4");
+            vid.load();
+            vid.play();
+        }
+
+        window.addEventListener("resize", function(){
+            var w = window.matchMedia("(max-width: 700px)");
+            var vid = document.getElementById("video-background");
+            var source = document.getElementById("hvid");
+
+            if (w.matches) {
+                vid.pause();
+                source.src = "images/background_vid_mobile.mp4";
+                vid.load();
+                vid.play();
+            } else {
+                vid.pause();
+                source.src = "images/background_vid.mp4";
+                vid.load();
+                vid.play();
+            }
+        });
+    </script>
+
 
     <!-- Services -->
     <section style="padding-top:40px;font-family:bebas-regular; background-color:#0e2141" id="services" class="cards-1">
