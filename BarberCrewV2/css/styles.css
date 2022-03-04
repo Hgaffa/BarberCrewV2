@@ -194,8 +194,32 @@ a.animBtn:visited {
         display: block;
         width: 200px;
         line-height: 18px;
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         height: 50px;
+        margin: 30px auto 0;
+        padding: 14px 15px;
+        border: 2px solid #d7a75b;
+        background: rgba(49, 35, 58, 0.2);
+        color: #d7a75b;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 0.08em;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    a.animBtn:link,
+    a.animBtn:visited {
+        position: relative;
+        display: block;
+        width: 400px;
+        line-height: 60px;
+        font-size: 3rem !important;
+        height: 100px;
         margin: 30px auto 0;
         padding: 14px 15px;
         border: 2px solid #d7a75b;
@@ -903,14 +927,14 @@ a:hover {
 
 .split .area-1 {
     height: 430px;
-    background: url('../images/team.jpg') center center no-repeat;
+    background: url('../images/team/team.jpg') center center no-repeat;
     background-size: cover;
     color: #0e2141;
 }
 
 .split .area-3 {
     height: 430px;
-    background: url('../images/shop_sign.jpg') center center no-repeat;
+    background: url('../images/shop_sign-min.jpg') center center no-repeat;
     background-size: cover;
     color: #0e2141;
 }
