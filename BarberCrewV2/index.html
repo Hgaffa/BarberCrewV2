@@ -26,30 +26,6 @@
     <!-- Webpage Title -->
     <title>Barber Crew</title>
 
-    <script>
-        function addClass(A) {
-            document.documentElement.classList.add(A)
-        }
-        var avif = new Image;
-
-        function check_webp_feature(a) {
-            var e = new Image;
-            e.onload = function() {
-                var A = 0 < e.width && 0 < e.height;
-                a(A)
-            }, e.onerror = function() {
-                a(!1)
-            }, e.src = "data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=="
-        }
-        avif.src = "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=", avif.onload = function() {
-            addClass("avif")
-        }, avif.onerror = function() {
-            check_webp_feature(function(A) {
-                return addClass(A ? "webp" : "fallback")
-            })
-        };
-    </script>
-
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -221,7 +197,7 @@
                         <div class="card-icon">
                             <a href="index.html">
                                 <picture>
-                                    <source srcset="images/services_icons/scissors_icon.avif">
+                                    <source srcset="images/services_icons/scissors_icon.avif" type="image/avif">
                                     <img class="header-banner-logo" src="images/services_icons/scissors_icon.png" alt="Barber Crew Scissor Cut Icon">
                                 </picture>
                             </a>
@@ -239,7 +215,7 @@
                         <div class="card-icon">
                             <a href="index.html">
                                 <picture>
-                                    <source srcset="images/services_icons/cut_throat_icon.avif">
+                                    <source srcset="images/services_icons/cut_throat_icon.avif" type="image/avif">
                                     <img class="header-banner-logo" src="images/services_icons/cut_throat_icon.png" alt="Barber Crew Cut Throat Shave Icon">
                                 </picture>
                             </a>
@@ -258,7 +234,7 @@
                         <div class="card-icon">
                             <a href="index.html">
                                 <picture>
-                                    <source srcset="images/services_icons/tanning_icon.avif">
+                                    <source srcset="images/services_icons/tanning_icon.avif" type="image/avif">
                                     <img class="header-banner-logo" src="images/services_icons/tanning_icon.png" alt="Barber Crew Tanning Icon">
                                 </picture>
                             </a>
@@ -345,7 +321,7 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\patrick.avif">
+                                        <source srcset="images\team\patrick.avif" type="image/avif">
                                         <img src="images\team\patrick.jpg" alt="Barber Crew Team Patrick">
                                         <div class="testimonial-author">Patrick</div>
                                         <div class="testimonial-position">Trainee - Afro Hair, Skin Fades & Luxury Shaves</div>
@@ -354,7 +330,7 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\gustavo.avif">
+                                        <source srcset="images\team\gustavo.avif" type="image/avif">
                                         <img src="images\team\gustavo.jpg" alt="Barber Crew Team Gustavo">
                                         <div class="testimonial-author">Gustavo</div>
                                         <div class="testimonial-position">Lockdown Comeback, Head Massages, Skin Fades & Waxing</div>
@@ -363,7 +339,7 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\ruby.avif">
+                                        <source srcset="images\team\ruby.avif" type="image/avif">
                                         <img src="images\team\ruby.jpg" alt="Barber Crew Team Ruby">
                                         <div class="testimonial-author">Ruby</div>
                                         <div class="testimonial-position">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
@@ -372,7 +348,7 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\sunny.avif">
+                                        <source srcset="images\team\sunny.avif" type="image/avif">
                                         <img src="images\team\sunny.jpg" alt="Barber Crew Team Sunny">
                                         <div class="testimonial-author">Sunny</div>
                                         <div class="testimonial-position">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
@@ -381,7 +357,7 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\marius.avif">
+                                        <source srcset="images\team\marius.avif" type="image/avif">
                                         <img src="images\team\marius.jpg" alt="Barber Crew Team Marius">
                                         <div class="testimonial-author">Marius</div>
                                         <div class="testimonial-position">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
@@ -448,43 +424,43 @@
 
     <div style="padding-top:70px; padding-bottom:70px;" id="gallery" class="gallery-container">
         <picture>
-            <source srcset="images\gallery\gallery1_min.avif">
+            <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
             <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Ladies Haircut" class="lazyload">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery2_min.avif">
+            <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
             <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery3_min.avif">
+            <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
             <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery4_min.avif">
+            <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
             <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery5_min.avif">
+            <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
             <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery6_min.avif">
+            <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
             <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery7_min.avif">
+            <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
             <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery8_min.avif">
+            <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
             <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery9_min.avif">
+            <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
             <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
         <picture>
-            <source srcset="images\gallery\gallery10_min.avif">
+            <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
             <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Ladies Haircut">
         </picture>
     </div>
