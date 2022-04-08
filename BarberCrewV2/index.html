@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Title & Meta Data-->
-    <title>Barber Crew - Unisex Hair, Luxury Shaves & Tanning - Twyford Wargrave Wokingham</title>
-    <link rel='icon' href='images/favicon.png' type='image/x-icon'/ >
-    <meta name="description" content="Unisex Barbers in Twyford & Wargrave, RG10. We provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers!">
-    <meta name="keywords" content="Barber, Haircut, Ladies Hairdresser, Men's Hair, Skin Fade, Barbers Twyford, Barbers Wokingham, Turkish Shave, Sunbed, Face Waxing">
+    <title>Barber Crew - Unisex Hair, Luxury Shaves & Tanning - Twyford Wargrave & Wokingham Barbers</title>
+    <link rel='icon' href='images/favicon.png' type='image/x-icon' />
+    <meta name="description" content="Unisex Barbers in Twyford, Wargrave & Wokingham, RG10. We provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers!">
+    <meta name="keywords" content="Barber, Haircut, Ladies Hairdresser, Men's Hair, Skin Fade, Barbers Twyford, Barbers Wokingham, Barbers Wargrave, Turkish Shave, Sunbed, Face Waxing">
     <meta name="author" content="Barber Crew">
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="Barber Crew" />
+    <!-- website name -->
+    <meta property="og:site" content="barbercrew.co.uk" />
+    <!-- website link -->
+    <meta property="og:title" content="Barber Crew - Unisex Hair, Luxury Shaves & Tanning" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Unisex Barbers in Twyford, Wargrave & Wokingham, RG10. We provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers!" />
+    <!-- description shown in the actual shared post -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
     <title>Barber Crew</title>
-    
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/footer.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
 
-	<!-- Favicon  -->
+    <!-- cookiealert styles -->
+    <link rel="stylesheet" href="css/cookiealert.css">
+
+    <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
 </head>
-<body>
-    
+
+<body onload="setVid()">
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-        <div class="container">
+        <div class="container ">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/website_banner.png" alt="alternative"></a> 
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/website_banner.png" alt="Barber Crew Logo Banner"></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
@@ -56,9 +65,13 @@
                         <a class="nav-link dropdown-toggle active" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Book Now</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="book_twyford.html">Book - Twyford</a></li>
-                            <li><div class="dropdown-divider"></div></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
                             <li><a class="dropdown-item" href="book_wargrave.html">Book - Wargrave</a></li>
-                            <li><div class="dropdown-divider"></div></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -67,7 +80,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
-                   <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
@@ -84,46 +97,97 @@
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
-                    <span class="fa-stack">
+                <span class="fa-stack">
                         <a href="https://instagram.com/barbercrewuk">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-instagram fa-stack-1x"></i>
                         </a>
                     </span>
-                    <span class="fa-stack">
+                <span class="fa-stack">
                         <a href="https://www.youtube.com/channel/UCQHLCgqi4nOBNdio3wcLs0w">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-youtube fa-stack-1x"></i>
                         </a>
                     </span>
                 </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
+            </div>
+            <!-- end of navbar-collapse -->
+        </div>
+        <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
     <!-- end of navigation -->
 
-      
+
     <!-- Video Header -->
     <header id="header" class="header">
         <div class="header-content">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="index.html"><img class="header-banner-logo" src="images/website_banner.png" alt="alternative"></a> 
-                        <a style="font-family:bebas-regular;font-size:3.5rem;" href="booking_landing.html" class="animBtn themeA">Book Now</a>                    
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-        
+                        <a href="index.html"><img class="header-banner-logo" src="images/website_banner.png" alt="Barber Crew Logo Overlay"></a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Book Now - Twyford</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Book Now - Wargrave</a> </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of header-content -->
+
         <!-- Video Background -->
-        <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
-            <source src="images/background_vid.mp4" type="video/mp4" />
+        <video autoplay loop muted id="video-background" playsinline>
+            <!--<source id="video-background-source" type="video/mp4" />-->
         </video>
         <!-- end of video background -->
 
-    </header> <!-- end of header -->
+    </header>
     <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Video Update Script -->
+    <script>
+        var w = window.matchMedia("(max-width: 700px)");
+        var vid = document.getElementById("video-background");
+        var source = document.createElement("source");
+        source.id = "hvid";
+        source.setAttribute("type", "video/mp4");
+        vid.appendChild(source);
+
+        if (w.matches) {
+            vid.pause();
+            source.removeAttribute("src");
+            source.setAttribute("src", "images/video_banner/background_vid_mobile-min.mp4");
+            vid.load();
+            vid.play();
+        } else {
+            vid.pause();
+            source.removeAttribute("src");
+            source.setAttribute("src", "images/video_banner/background_vid-min.mp4");
+            vid.load();
+            vid.play();
+        }
+
+        window.addEventListener("resize", function() {
+            var w = window.matchMedia("(max-width: 700px)");
+            var vid = document.getElementById("video-background");
+            var source = document.getElementById("hvid");
+
+            if (w.matches) {
+                vid.pause();
+                source.src = "images/video_banner/background_vid_mobile-min.mp4";
+                vid.load();
+                vid.play();
+            } else {
+                vid.pause();
+                source.src = "images/video_banner/background_vid-min.mp4";
+                vid.load();
+                vid.play();
+            }
+        });
+    </script>
+
 
     <!-- Services -->
     <section style="padding-top:40px;font-family:bebas-regular; background-color:#0e2141" id="services" class="cards-1">
@@ -134,11 +198,17 @@
                     <!-- Card -->
                     <div style="background-color:#0e2141" class="card">
                         <div class="card-icon">
-                            <a href="index.html"><img class="header-banner-logo" src="images/scissors_icon.png" alt="alternative"></a> 
+                            <a href="index.html">
+                                <picture>
+                                    <source srcset="images/services_icons/scissors_icon.avif" type="image/avif">
+                                    <img class="header-banner-logo" src="images/services_icons/scissors_icon.png" alt="Barber Crew Scissor Cut Icon">
+                                </picture>
+                            </a>
                         </div>
                         <div class="card-body">
                             <h4 style="font-size:2rem;letter-spacing: 0.2rem;font-family:bebas-regular;color:white" class="card-title">Unisex Hair</h4>
-                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">The Barber Crew team are experienced with all hair types, including childrens, ladies and afro hair. We also cater for OAP's.</div>
+                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">At Barber Crew, our talented and experienced team will make you look and feel great. We serve everyone and are experienced with all hair types including men, children, ladies, afro, classic and modern styles.
+                            </div>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -146,11 +216,18 @@
                     <!-- Card -->
                     <div style="background-color:#0e2141" class="card">
                         <div class="card-icon">
-                            <a href="index.html"><img class="header-banner-logo" src="images/cut_throat_icon.png" alt="alternative"></a> 
+                            <a href="index.html">
+                                <picture>
+                                    <source srcset="images/services_icons/cut_throat_icon.avif" type="image/avif">
+                                    <img class="header-banner-logo" src="images/services_icons/cut_throat_icon.png" alt="Barber Crew Cut Throat Shave Icon">
+                                </picture>
+                            </a>
                         </div>
                         <div class="card-body">
-                            <h4 style="font-size:2rem;letter-spacing: 0.2rem;font-family:bebas-regular;color:white" class="card-title">Luxury Shaves</h4>
-                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">Hot towel steam shaves are one of the many professional services provided at Barber Crew, keeping luxury at the forefront of our operations. </div>
+                            <h4 style="font-size:2rem;letter-spacing: 0.2rem;font-family:bebas-regular;color:white" class="card-title">Luxury Services</h4>
+                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">Providing professional services by our trained staff such as Luxury Hot Towel Steam Shaves, Cleansing Facials and Eyebrow Threading will leave you feeling pampered and rejuvenated.
+
+                            </div>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -158,31 +235,40 @@
                     <!-- Card -->
                     <div style="background-color:#0e2141" class="card">
                         <div class="card-icon">
-                            <a href="index.html"><img class="header-banner-logo" src="images/tanning_icon.png" alt="alternative"></a> 
+                            <a href="index.html">
+                                <picture>
+                                    <source srcset="images/services_icons/tanning_icon.avif" type="image/avif">
+                                    <img class="header-banner-logo" src="images/services_icons/tanning_icon.png" alt="Barber Crew Tanning Icon">
+                                </picture>
+                            </a>
                         </div>
                         <div class="card-body">
                             <h4 style="font-size:2rem;letter-spacing: 0.2rem;font-family:bebas-regular;color:white" class="card-title">Tanning</h4>
-                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">We are the only hair studio in the Twyford area to offer high quality tanning in one of our two hapro sun beds, located in the Twyford studio.</div>
+                            <div style="letter-spacing: 0.15rem;color:white;padding-top:10px;" class="card-text">We are one of the few Studios offering high powered Hapro Sunbeds, located in our Twyford studio. Relax in a quiet part of our facility, with competitively priced sunbed treatments and aftercare.</div>
                         </div>
                     </div>
                     <!-- end of card -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of cards-1 -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of cards-1 -->
     <!-- end of introduction -->
-    
+
 
     <script>
-      (function(){
-        var customSelects = document.querySelectorAll(".custom-dropdown__select");
-        for(var i=0; i<customSelects.length; i++){
-        if (customSelects[i].hasAttribute("disabled")){
-            customSelects[i].parentNode.className += " custom-dropdown--disabled";
-        }
-        }
-    })()
+        (function() {
+            var customSelects = document.querySelectorAll(".custom-dropdown__select");
+            for (var i = 0; i < customSelects.length; i++) {
+                if (customSelects[i].hasAttribute("disabled")) {
+                    customSelects[i].parentNode.className += " custom-dropdown--disabled";
+                }
+            }
+        })()
     </script>
 
     <!--Location Maps-->
@@ -196,40 +282,33 @@
                         <option>Wargrave</option>
                         </select>
                 </span>
-            </div>            
+            </div>
             <div class="bar_bottom">
                 <a id="map_book_btn" href="book_twyford.html" style="background-color:#0e2141;border-color:#0e2141;color:#d7a75b;width:200px;height:50px;font-size:1.5rem;" class="tst_button btn btn-xl">Book Now</a>
             </div>
-            <iframe
-                class="frame"
-                id="map_frame"
-                width="100%"
-                height="100%"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww
+            <iframe class="frame" id="map_frame" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww
                     &q=Barber+Crew.Twyford+Reading" allowfullscreen>
-            </iframe>    
+            </iframe>
         </div>
     </section>
 
     <!--Update Studio Location Script (Event Listener)-->
     <script>
         var google_map = document.getElementById("map_frame");
-        var chosen_studio = document.getElementById("studio_choice"); 
+        var chosen_studio = document.getElementById("studio_choice");
         var booking_link = document.getElementById("map_book_btn");
 
-        function clck(){
-            if(chosen_studio.value== "Wargrave"){
-                google_map.src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu7D0QdaFdkgR61oVi2GlxoU&key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww" 
+        function clck() {
+            if (chosen_studio.value == "Wargrave") {
+                google_map.src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu7D0QdaFdkgR61oVi2GlxoU&key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww"
                 booking_link.href = "book_wargrave.html";
-            }
-            else{
+            } else {
                 booking_link.href = "#locations";
-                google_map.src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww&q=Barber+Crew.Twyford+Reading"
+                google_map.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww&q=Barber+Crew.Twyford+Reading"
                 booking_link.href = "book_twyford.html"
             }
         }
-        chosen_studio.addEventListener('change',clck);       
+        chosen_studio.addEventListener('change', clck);
     </script>
 
     <!-- The Team -->
@@ -242,117 +321,159 @@
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/marius.jpg" alt="alternative">
-                                    <div class="testimonial-author">Marius</div>
-                                    <div class="testimonial-position">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/ruby.jpg" alt="alternative">
-                                    <div class="testimonial-author">Ruby</div>
-                                    <div class="testimonial-position">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/sunny.jpg" alt="alternative">
-                                    <div class="testimonial-author">Sunny</div>
-                                    <div class="testimonial-position">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
 
-                                <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/gustavo.jpg" alt="alternative">
-                                    <div class="testimonial-author">Gustavo</div>
-                                    <div class="testimonial-position">Lockdown Comeback, Head Massages, Skin Fades & Waxing</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                    <picture>
+                                        <source srcset="images\team\patrick.avif" type="image/avif">
+                                        <img src="images\team\patrick.jpg" alt="Barber Crew Team Patrick">
+                                        <div class="testimonial-author">Patrick</div>
+                                        <div class="testimonial-position">Trainee - Afro Hair, Skin Fades & Luxury Shaves</div>
+                                    </picture>
+                                </div>
 
-                                <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/otavio.jpg" alt="alternative">
-                                    <div class="testimonial-author">Otavio</div>
-                                    <div class="testimonial-position">Skin Fades, Waxing & Luxury Shavees</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                    <picture>
+                                        <source srcset="images\team\gustavo.avif" type="image/avif">
+                                        <img src="images\team\gustavo.jpg" alt="Barber Crew Team Gustavo">
+                                        <div class="testimonial-author">Gustavo</div>
+                                        <div class="testimonial-position">Lockdown Comeback, Head Massages, Skin Fades & Waxing</div>
+                                    </picture>
+                                </div>
 
-                                <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/patrick.jpg" alt="alternative">
-                                    <div class="testimonial-author">Patrick</div>
-                                    <div class="testimonial-position">Trainee - Afro Hair, Skin Fades & Luxury Shaves</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                            </div> <!-- end of swiper-wrapper -->
-        
+                                    <picture>
+                                        <source srcset="images\team\ruby.avif" type="image/avif">
+                                        <img src="images\team\ruby.jpg" alt="Barber Crew Team Ruby">
+                                        <div class="testimonial-author">Ruby</div>
+                                        <div class="testimonial-position">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images\team\sunny.avif" type="image/avif">
+                                        <img src="images\team\sunny.jpg" alt="Barber Crew Team Sunny">
+                                        <div class="testimonial-author">Sunny</div>
+                                        <div class="testimonial-position">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images\team\marius.avif" type="image/avif">
+                                        <img src="images\team\marius.jpg" alt="Barber Crew Team Marius">
+                                        <div class="testimonial-author">Marius</div>
+                                        <div class="testimonial-position">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
+                                    </picture>
+                                </div>
+
+
+                            </div>
+                            <!-- end of swiper-wrapper -->
+
                             <!-- Add Arrows -->
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                             <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
+
+                        </div>
+                        <!-- end of swiper-container -->
+                    </div>
+                    <!-- end of slider-container -->
                     <!-- end of card slider -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of slider-1 -->
     <!-- end of testimonials -->
 
     <!-- Information 1 -->
-	<div class="split">
-		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
+    <div class="split">
+        <div class="area-1">
+        </div>
+        <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
         <div class="area-2 bg-gray">
-            <div class="container">    
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">     
-                        
+                    <div class="col-lg-12">
+
                         <!-- Text Container -->
                         <div class="text-container-og">
-                            <h2 style="font-family:bebas-regular;color:#0e2141;letter-spacing:0.2rem;">SAFETY AT BARBERCREW</h2>
-                            <p  class="p-og;"  style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;">At Barber Crew, the safety of our customers and staff is at the forefront of our operations. In order to protect our community from COVID-19, we continue to follow goverment guidlines and employ the highest level of covid security:</p>
-                            <p  class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>SANITISATION -</strong> Each of our studios are equipped with industry standard hand sanitiser for customer and staff use.</p>
-                            <p  class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>MASKS -</strong> Masks are preferred within our studios to reduce the spread of the virus. All of our barbers wear masks during services despite government guidance not requiring it.</p>
-                            <p  class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>APPOINTMENTS -</strong> Barber Crew operates with a simple online booking system. This is to reduce the event of mass queuing and to keep our studios safe for our customers.</p>
-                        </div> <!-- end of text-container -->
+                            <h2 style="font-family:bebas-regular;color:#0e2141;letter-spacing:0.2rem;">SAFETY AT BARBER CREW</h2>
+                            <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;">At Barber Crew, the safety of our customers and staff is at the forefront of our operations. In order to protect our community from COVID-19, we continue to follow goverment guidlines and employ the highest level of covid security:</p>
+                            <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>SANITISATION -</strong> Each of our studios (Twyford, Wargrave & Wokingham) are equipped with industry standard hand sanitiser for customer and staff use.</p>
+                            <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>MASKS -</strong> Masks are preferred within our studios to reduce the spread of the virus but are not required.</p>
+                            <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>APPOINTMENTS -</strong> Barber Crew operates with a simple online booking system. This is to reduce the event of mass queuing and to keep our studios safe for our customers. Walk-ins are also welcome!</p>
+                        </div>
+                        <!-- end of text-container -->
                         <!-- end of text container -->
 
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of split -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of area-2 -->
+    </div>
+    <!-- end of split -->
     <!-- end of details -->
 
     <div style="padding-top:70px; padding-bottom:70px;" id="gallery" class="gallery-container">
-        <img src="images\gallery1.jpg">
-        <img src="images\gallery2.jpg">
-        <img src="images\gallery3.jpg">
-        <img src="images\gallery4.jpg">
-        <img src="images\gallery5.jpg">
-        <img src="images\gallery6.jpg">
-        <img src="images\gallery7.jpg">
-        <img src="images\gallery8.jpg">
-        <img src="images\gallery9.jpg">
-        <img src="images\gallery10.jpg">
+        <picture>
+            <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
+            <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Haircut" class="lazyload">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
+            <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
+            <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Beard">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
+            <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Hair Dye">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
+            <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Afro Hair">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
+            <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Eyebrow Threading & Beard Trim">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
+            <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Junior Children Haircut">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
+            <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Long Haircut">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
+            <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Professional Beard & Trim">
+        </picture>
+        <picture>
+            <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
+            <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Curly Hair & Skin Fade">
+        </picture>
     </div>
 
     <!-- Information 2 -->
-	<div class="split">
+    <div class="split">
         <div class="area-2 bg-gray">
-            <div class="container">    
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">     
+                    <div class="col-lg-12">
                         <!-- Text Container -->
                         <div style="text-align:center !important;" class="text-container">
                             <h2 style="font-family:bebas-regular;color:#0e2141;letter-spacing:0.2rem;font-size:3rem;">OPENING TIMES</h2>
@@ -378,15 +499,21 @@
                                     <p class="times"><strong>Sun:</strong> &nbsp 10:00-17:00</p>
                                 </div>
                             </div>
-                        </div> <!-- end of text-container -->
+                        </div>
+                        <!-- end of text-container -->
                         <!-- end of text container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
         </div>
         <div class="area-3"></div>
+
         <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
-    </div> <!-- end of split -->
+    </div>
+    <!-- end of split -->
     <!-- end of details -->
 
     <!-- Statistics -->
@@ -394,32 +521,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                     <!-- Counter -->
                     <div class="counter-container">
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="418" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="430" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">FOLLOWERS</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
+                        <!-- end of counter-cell -->
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="33" data-purecounter-duration="1.5" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">SERVICES</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
+                        <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="230" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="255" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">Five Star Reviews</div>
-                        </div> <!-- end of counter-cell -->
+                        </div>
+                        <!-- end of counter-cell -->
                         <div class="counter-cell">
                             <div data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">STUDIOS</div>
-                        </div> <!-- end of counter-cell -->
-                    </div> <!-- end of counter-container -->
+                        </div>
+                        <!-- end of counter-cell -->
+                    </div>
+                    <!-- end of counter-container -->
                     <!-- end of counter -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of counter -->
     <!-- end of statistics -->
 
     <!-- Contact -->
@@ -437,7 +573,7 @@
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
                     </ul>
                     <div style="padding-top:10px;padding-bottom:10px">
-                    <hr style="margin:auto;border-radius:5px; opacity:0.6;height:3px; width:70%; border-width:0; color:white; background-color:white">
+                        <hr style="margin:auto;border-radius:5px; opacity:0.6;height:3px; width:70%; border-width:0; color:white; background-color:white">
                     </div>
                     <ul class="list-unstyled li-space-lg">
                         <li style="text-decoration:underline;">TWYFORD:</li>
@@ -446,11 +582,13 @@
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
                     </ul>
                     <br>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    
+
                     <!-- Contact Form -->
                     <form action="mail_handler.php" method="post" data-toggle="validator">
                         <div class="form-group">
@@ -474,14 +612,18 @@
                     </form>
                     <!-- end of contact form -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of form-1 -->
     <!-- end of contact -->
 
     <!-- Bottom banner -->
-    <div style="color:white;text-align:center;font-size:50px;"style="background-color:#0e2141;">
+    <div style="color:white;text-align:center;font-size:50px;" style="background-color:#0e2141;">
         <img style="width:100%; height:100%;" src="images/sign-min.jpg" alt="Barber Crew Shop Banner"></img>
     </div>
 
@@ -490,85 +632,108 @@
         <hr>
         <div class="container">
             <div class="row">
-            <div class="col-sm-12 col-md-6">
-            <h6 style="text-align:center">About</h6>
-            <p class="footer-mobile text-justify"> At Barber Crew, our talented and experienced team, will make you look and feel great. We are the best in the area for Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's.</p>
-            </div>
+                <div class="col-sm-12 col-md-6">
+                    <h6 style="text-align:center">About</h6>
+                    <p class="footer-mobile text-justify"> At Barber Crew, our talented and experienced team, will make you look and feel great. We are the best in the Twyford, Wargrave & Wokingham areas for Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two
+                        Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's</p>
+                </div>
 
-            <div class="col-xs-6 col-md-3">
-            <h6 style="text-align:center">Quick Links</h6>
-            <ul style="text-align:center;" class="footer-links">
-                <li><a href="toc.html">Terms & Conditions</a></li>
-                <li><a href="./index.html#contact">Contact Us</a></li>
-                <li><a href="cookie_policy.html">Cookie Policy</a></li>
-                <li><a href="privacy_policy.html">Privacy Policy</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
+                <div class="col-xs-6 col-md-3">
+                    <h6 style="text-align:center">Quick Links</h6>
+                    <ul style="text-align:center;" class="footer-links">
+                        <li><a href="toc.html">Terms & Conditions</a></li>
+                        <li><a href="./index.html#contact">Contact Us</a></li>
+                        <li><a href="cookie_policy.html">Cookie Policy</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <hr>
+            <hr>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright copyright-text">
-                </p>
+                    <p class="copyright copyright-text">
+                    </p>
                 </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="footer-mobile footer-col first">
+                    Copyright &copy; 2021 All Rights Reserved by
+                    <a href="#">Barber Crew</a>.
                 </div>
-                    <div class="col-lg-12">
-                        <div class="footer-mobile footer-col first">
-                            Copyright &copy; 2021 All Rights Reserved by
-                            <a href="#">Barber Crew</a>.
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-col second">
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-mobile footer-col third">
-                            <span class="fa-stack">
+                <!-- end of footer-col -->
+                <div class="footer-col second">
+                </div>
+                <!-- end of footer-col -->
+                <div class="footer-mobile footer-col third">
+                    <span class="fa-stack">
                                 <a href="https://www.facebook.com/barbercrewuk/">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <span class="fa-stack">
+                    <span class="fa-stack">
                                 <a href="https://twitter.com/barbercrewuk?lang=en">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <span class="fa-stack">
+                    <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-youtube fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <span class="fa-stack">
+                    <span class="fa-stack">
                                 <a href="https://www.instagram.com/barbercrewuk">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <p class="footer-mobile p-small">We would love to hear from you <a href="mailto:info@barbercrew.co.uk"><strong>info@barberecrew.co.uk</strong></a></p>
-                        </div> <!-- end of footer-col -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    
+                    <p class="footer-mobile p-small">We would love to hear from you <a href="mailto:info@barbercrew.co.uk"><strong>info@barberecrew.co.uk</strong></a></p>
+                </div>
+                <!-- end of footer-col -->
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+    </div>
+    <!-- end of footer -->
 
-                    
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="cookie_policy.html" target="_blank">Learn more</a>
+
+        <button type="button" class="btn cookie-button btn-sm acceptcookies">
+            I agree
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
+            <img src="images/up-arrow.png" alt="Barber Crew Up Arrow">
+        </button>
     <!-- end of back to top button -->
-    	
+
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/324219a00a.js" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script>
+    <!-- Purecounter counter for statistics numbers -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Isotope for filter -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+    <!-- Include cookiealert script -->
+    <script src="js/cookiealert.js"></script>
 </body>
+
 </html>
