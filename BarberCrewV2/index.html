@@ -37,7 +37,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
 
     <!-- cookiealert styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    <link rel="stylesheet" href="css/cookiealert.css">
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
@@ -143,6 +143,7 @@
         <!-- end of video background -->
 
     </header>
+    <!-- end of header -->
     <!-- end of header -->
 
     <!-- Video Update Script -->
@@ -703,40 +704,21 @@
     </div>
     <!-- end of footer -->
 
-
-
-
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
-
-    <!-- Check if cookie already accepted -->
-    <script>
-        $(document).ready(function() {
-            // Check if the user already accepted it
-            if (window.localStorage.getItem('accept_cookies')) {
-                $('#CookieBanner').hide();
-            }
-
-            $("#AcceptCookies").click(function() {
-                // Save on LocalStorage
-                window.localStorage.setItem('accept_cookies', true);
-                $('#CookieBanner').hide();
-            });
-        });
-    </script>
-
     <!-- START Bootstrap-Cookie-Alert -->
-    <div class="alert text-center cookiealert" role="alert" id="CookieBanner">
+    <div class="alert text-center cookiealert" role="alert">
         <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="cookie_policy.html" target="_blank">Learn more</a>
 
-        <button type="button" class="btn btn-primary btn-sm" id="AcceptCookies">
+        <button type="button" class="btn cookie-button btn-sm acceptcookies">
             I agree
         </button>
     </div>
     <!-- END Bootstrap-Cookie-Alert -->
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+            <img src="images/up-arrow.png" alt="alternative">
+        </button>
+    <!-- end of back to top button -->
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/324219a00a.js" crossorigin="anonymous"></script>
@@ -751,7 +733,7 @@
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
     <!-- Include cookiealert script -->
-    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+    <script src="js/cookiealert.js"></script>
 </body>
 
 </html>
