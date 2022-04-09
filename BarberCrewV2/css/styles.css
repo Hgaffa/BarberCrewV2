@@ -239,13 +239,13 @@ a.animBtn:link:after,
 a.animBtn:visited:after {
     content: "";
     position: absolute;
-    background: none repeat scroll 0 0 #0e2141;
+    background: none repeat scroll 0 0 #d7a75b;
     height: 0%;
     left: 50%;
     top: 50%;
     width: 100%;
     z-index: -1;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 a.animBtn:link:hover,
@@ -261,7 +261,7 @@ a.animBtn:visited:hover:after {
 }
 
 a.animBtn.themeA:after {
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-15deg);
 }
 
 a.animBtn.themeB:after {
@@ -846,7 +846,7 @@ a:hover {
 .header .header-content {
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background: linear-gradient(rgba(21, 35, 63, 0.5), rgba(21, 35, 63, 0.5));
+    /*background: linear-gradient(rgba(21, 35, 63, 0.5), rgba(21, 35, 63, 0.5));*/
     background-size: cover;
     text-align: center;
 }
