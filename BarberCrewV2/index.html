@@ -287,6 +287,7 @@
                         <option value="" disabled>Location:</option>
                         <option selected>Twyford</option>
                         <option>Wargrave</option>
+                        <option>Wokingham</option>
                         </select>
                 </span>
             </div>
@@ -307,12 +308,14 @@
 
         function clck() {
             if (chosen_studio.value == "Wargrave") {
-                google_map.src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu7D0QdaFdkgR61oVi2GlxoU&key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww"
+                google_map.src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu7D0QdaFdkgR61oVi2GlxoU&key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww";
                 booking_link.href = "book_wargrave.html";
+            } else if (chosen_studio.value == "Twyford") {
+                google_map.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww&q=Barber+Crew.Twyford+Reading";
+                booking_link.href = "book_twyford.html";
             } else {
-                booking_link.href = "#locations";
-                google_map.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww&q=Barber+Crew.Twyford+Reading"
-                booking_link.href = "book_twyford.html"
+                google_map.src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJS4t5DEOBdkgRP0Urnk8LibQ&key=AIzaSyDk0z1cLL0daAgQK8orL6nzdlCoOt4BHww";
+                booking_link.href = "book_wokingham.html";
             }
         }
         chosen_studio.addEventListener('change', clck);
@@ -606,7 +609,7 @@
                 <div class="col-lg-10 offset-lg-1">
 
                     <!-- Contact Form -->
-                    <form action="mail_handler.php" method="post" data-toggle="validator">
+                    <form method="POST" action="mail_handler.php" data-toggle="validator">
                         <div class="form-group">
                             <input type="text" class="form-control-input" placeholder="Name" name="name" required>
                         </div>
