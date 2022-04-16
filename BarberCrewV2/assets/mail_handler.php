@@ -96,13 +96,11 @@ if($_POST) {
 
     $email_body .= "</div>";
 
-
-
     $headers  = 'MIME-Version: 1.0' . "\r\n"
 
     .'Content-type: text/html; charset=iso-8859-1' . "\r\n"
 
-    .'From: ' . $visitor_email . "\r\n";
+    .'From: <contact@barbercrew.co.uk>' . "\r\n";
 
 
 

@@ -841,6 +841,8 @@ a:hover {
     width: auto;
     height: auto;
     z-index: -100;
+    border-bottom: 1px solid #0e2141;
+    -webkit-perspective: 1000;
 }
 
 .header .header-content {
@@ -998,7 +1000,7 @@ a:hover {
 
 .split .c {
     float: left;
-    width: 50%;
+    width: 33%;
     padding: 10px;
     height: 300px;
     /* Should be removed. Only for demonstration */

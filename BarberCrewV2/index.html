@@ -144,7 +144,7 @@
         <!-- end of header-content -->
 
         <!-- Video Background -->
-        <video autoplay loop muted id="video-background" playsinline>
+        <video id="video-background" autoplay loop autobuffer muted playsinline>
             <!--<source id="video-background-source" type="video/mp4" />-->
         </video>
         <!-- end of video background -->
@@ -508,6 +508,16 @@
                                     <p class="times"><strong>Sat:</strong> &nbsp 08:00-17:00</p>
                                     <p class="times"><strong>Sun:</strong> &nbsp 10:00-17:00</p>
                                 </div>
+                                <div class="c">
+                                    <h2 class="title">Wokingham:</h2>
+                                    <p class="times"><strong>Mon:</strong>&nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Tue:</strong> &nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Wed:</strong> &nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Thu:</strong> &nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Fri:</strong> &nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Sat:</strong> &nbsp 08:00-16:00</p>
+                                    <p class="times"><strong>Sun:</strong> &nbsp closed</p>
+                                </div>
                             </div>
                         </div>
                         <!-- end of text-container -->
@@ -609,7 +619,7 @@
                 <div class="col-lg-10 offset-lg-1">
 
                     <!-- Contact Form -->
-                    <form method="POST" action="mail_handler.php" data-toggle="validator">
+                    <form method="POST" action="./assets/mail_handler.php" data-toggle="validator">
                         <div class="form-group">
                             <input type="text" class="form-control-input" placeholder="Name" name="name" required>
                         </div>

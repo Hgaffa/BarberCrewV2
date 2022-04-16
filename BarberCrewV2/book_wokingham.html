@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Title & Meta Data-->
-    <title>Barber Crew - Book Now Twyford</title>
+    <title>Barber Crew - Book Now Wokingham</title>
     <link rel='icon' href='images/favicon.png' type='image/x-icon' />
-    <meta name="description" content="Book now in the Barber Crew Twyford studio where we provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading for all hair types. We also have two Hapro Sunbeds for you tan lovers!">
+    <meta name="description" content="Book now in the Barber Crew Wokingham studio where we provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading for all hair types.">
     <meta name="keywords" content="Barber, Haircut, Ladies Hairdresser, Men's Hair, Skin Fade, Barbers Twyford, Barbers Wokingham, Barbers Wargrave, Turkish Shave, Sunbed, Face Waxing">
     <meta name="author" content="Barber Crew">
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
@@ -16,15 +16,16 @@
     <!-- website name -->
     <meta property="og:site" content="barbercrew.co.uk" />
     <!-- website link -->
-    <meta property="og:title" content="Barber Crew - Book Now Twyford" />
+
+    <meta property="og:title" content="Barber Crew - Book Now Wokingham" />
     <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Book now in the Barber Crew Twyford studio where we provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading for all hair types. We also have two Hapro Sunbeds for you tan lovers!" />
+    <meta property="og:description" content="Book now in the Barber Crew Twyford studio where we provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading for all hair types." />
     <!-- description shown in the actual shared post -->
     <meta name="twitter:card" content="summary_large_image">
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Barber Crew - Book Now Twyford</title>
+    <title>Barber Crew - Book Now Wokingham</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -36,6 +37,8 @@
     <link href="css/footer.css" rel="stylesheet">
     <!-- cookiealert styles -->
     <link rel="stylesheet" href="css/cookiealert.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
@@ -126,8 +129,34 @@
         <div style="padding-top:20px;background-color:#0e2141;text-align:center;">
             <h2 style="padding-left:20px;padding-right:20px;font-family:bebas-regular;color:white;letter-spacing:0.2rem;">- Wokingham -</h2>
             <h2 style="padding-left:20px;padding-right:20px;font-family:bebas-regular;color:white">PLEASE SELECT THE SERVICE YOU WISH TO BOOK</h2>
-            <script nonce="4WfiqsFusaOGBFAfb15JvA==" src="https://nearcut.com/secure_widget.js"></script>
-            <div id="nearcut" data-domain="https://iframe-13017.nearcut.com"></div>
+            <div style="padding-top:20px;margin-left:1.5rem;margin-right:1.5rem;" class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div id="bookapp-reservation-widget">
+                        <script id="book_script" type="text/javascript">
+                            var check = localStorage.getItem("site");
+                            if (check == "Twyford") {
+                                check = "barbercrew";
+                            } else {
+                                check = "barbercrew-wargrave";
+                            }! function(e, t, n) {
+                                var u = n.queue || [];
+                                e.BookAppWidgetReady = n = function(e) {
+                                    n.queue.push(e)
+                                }, n.queue = u;
+                                var o = "script",
+                                    a = t.createElement(o),
+                                    i = t.getElementsByTagName(o)[0];
+                                a.src = "https://cdn.book.app/embed/v1.js", a.type = "text/javascript", a.async = !0, a.addEventListener("load", function() {
+                                    for (; n.queue.length;) n.queue.shift()()
+                                }, !1), i.parentNode.insertBefore(a, i)
+                            }(window, document, window.BookAppWidgetReady || function() {});
+                            BookAppWidgetReady(function() {
+                                BookApp.widget('#bookapp-reservation-widget', 'barbercrew-wokingham');
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -237,7 +266,6 @@
     <!-- Isotope for filter -->
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include cookiealert script -->
     <script src="js/cookiealert.js"></script>
 
