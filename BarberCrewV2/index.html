@@ -7,7 +7,7 @@
 
     <!--Title & Meta Data-->
     <title>Barber Crew - Unisex Hair, Luxury Shaves & Tanning - Twyford Wargrave & Wokingham Barbers</title>
-    <link rel='icon' href='images/favicon.png' type='image/x-icon' />
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
     <meta name="description" content="Unisex Barbers in Twyford, Wargrave & Wokingham, RG10. We provide Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two Hapro Sunbeds for you tan lovers!">
     <meta name="keywords" content="Barber, Haircut, Ladies Hairdresser, Men's Hair, Skin Fade, Barbers Twyford, Barbers Wokingham, Barbers Wargrave, Turkish Shave, Sunbed, Face Waxing">
     <meta name="author" content="Barber Crew">
@@ -35,6 +35,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- cookiealert styles -->
     <link rel="stylesheet" href="css/cookiealert.css">
@@ -125,11 +126,17 @@
 
     <!-- Video Header -->
     <header id="header" class="header">
+
+        <!-- Video Background -->
+        <video id="video-background" autoplay loop autobuffer muted playsinline>
+                <!--<source id="video-background-source" type="video/mp4" />-->
+            </video>
+        <!-- end of video background -->
         <div class="header-content">
-            <div class="container">
+            <div class="container" style="z-index: 1;">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="index.html"><img class="header-banner-logo" src="images/website_banner.png" alt="Barber Crew Logo Overlay"></a>
+                        <a href="index.html" style="position: relative;"><img class="header-banner-logo" src="images/website_banner.png" alt="Barber Crew Logo Overlay"></a>
                         <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Book Now - Twyford</a>
                         <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Book Now - Wargrave</a>
                         <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wokingham.html" class="animBtn themeA">Book Now - Wokingham</a>
@@ -142,12 +149,6 @@
         <!-- end of container -->
         </div>
         <!-- end of header-content -->
-
-        <!-- Video Background -->
-        <video id="video-background" autoplay loop autobuffer muted playsinline>
-            <!--<source id="video-background-source" type="video/mp4" />-->
-        </video>
-        <!-- end of video background -->
 
     </header>
     <!-- end of header -->
@@ -750,6 +751,12 @@
     <!-- end of back to top button -->
 
     <!-- Scripts -->
+    <script>
+        $(window).on('beforeunload', function() {
+            $("video-background").hide();
+        });
+    </script>
+
     <script src="https://kit.fontawesome.com/324219a00a.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap framework -->

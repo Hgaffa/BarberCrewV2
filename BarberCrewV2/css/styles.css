@@ -840,9 +840,7 @@ a:hover {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
     border-bottom: 1px solid #0e2141;
-    -webkit-perspective: 1000;
 }
 
 .header .header-content {
@@ -851,6 +849,7 @@ a:hover {
     /*background: linear-gradient(rgba(21, 35, 63, 0.5), rgba(21, 35, 63, 0.5));*/
     background-size: cover;
     text-align: center;
+    background-color: #0e2141;
 }
 
 .header .h1-large {
@@ -1539,6 +1538,7 @@ a:hover {
     .header .header-content {
         padding-top: 15rem;
         padding-bottom: 13rem;
+        background-color: #0e2141;
     }
     /* end of header */
     /* Statistics */
@@ -1643,6 +1643,7 @@ a:hover {
     .header .header-content {
         padding-top: 18rem;
         padding-bottom: 16rem;
+        background-color: #0e2141;
     }
     .header .h1-large {
         margin-bottom: 2.75rem;
@@ -1780,6 +1781,7 @@ a:hover {
         height: 100vh;
         padding-top: 0;
         padding-bottom: 0;
+        background-color: #0e2141;
     }
     .header .btn-solid-lg {
         padding: 1.875rem 3rem;
