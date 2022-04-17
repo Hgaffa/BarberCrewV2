@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://barbercrew.co.uk/</loc>
+  <lastmod>2022-04-16T23:21:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/index.html</loc>
+  <lastmod>2022-04-16T23:21:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/book_twyford.html</loc>
+  <lastmod>2022-04-16T23:25:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/book_wargrave.html</loc>
+  <lastmod>2022-04-16T23:25:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/book_wokingham.html</loc>
+  <lastmod>2022-04-16T23:26:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/reviews.html</loc>
+  <lastmod>2022-04-16T23:25:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/toc.html</loc>
+  <lastmod>2022-04-16T23:25:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/cookie_policy.html</loc>
+  <lastmod>2022-04-16T23:26:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/privacy_policy.html</loc>
+  <lastmod>2022-04-16T23:26:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://barbercrew.co.uk/sitemap.html</loc>
+  <lastmod>2022-04-16T23:25:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
