@@ -1,5 +1,5 @@
 # Barber Crew Website Version 2.0
-Updated Barber Crew Website Theme. Find website live at barbercrew.co.uk
+Updated Barber Crew Website Theme. Find website live at https://www.barbercrew.co.uk
 
 ## 1 External Scripts & Libraries:
 - Cookie Alert: https://github.com/Wruczek/Bootstrap-Cookie-Alert
