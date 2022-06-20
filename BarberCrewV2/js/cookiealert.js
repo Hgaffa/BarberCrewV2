@@ -30,3 +30,26 @@
         window.dispatchEvent(new Event("cookieAlertAccept"))
     });
 })();
+
+//Local Storage Functions
+function setCookie(val) {
+    localStorage.setItem("site", val);
+}
+
+var rs = document.getElementById("reviews_script");
+
+function storageChanged(key, oldVal, newVal) {
+    if (key == "site" && newVal != oldVal) {
+        var reviews = rs.getAttribute('check');
+
+        if (newVal == "Wokingham") {
+            reviews = "barbercrew-wokingham";
+        } else if (newVal == "Wargrave") {
+            reviews = "barbercrew-wargrave";
+        } else {
+            reviews = "barbercrew";
+        }
+        window.location.reload();
+    }
+}
+window.addEventListener("storage", storageChanged);

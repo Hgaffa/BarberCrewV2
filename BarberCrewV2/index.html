@@ -102,8 +102,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    <li class="nav-item dropdown a">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Reviews</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" onClick="setCookie('Twyford')" href="reviews.html">Twyford</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" onClick="setCookie('Wargrave')" href="reviews.html">Wargrave</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" onClick="setCookie('Wokingham')" href="reviews.html">Wokingham</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
@@ -530,9 +544,9 @@
                                 </div>
                                 <div class="c">
                                     <h2 class="title">Wokingham:</h2>
-                                    <p class="times"><strong>Mon:</strong>&nbsp 08:30-17:30</p>
-                                    <p class="times"><strong>Tue:</strong> &nbsp 08:30-17:30</p>
-                                    <p class="times"><strong>Wed:</strong> &nbsp 08:30-17:30</p>
+                                    <p class="times"><strong>Mon:</strong>&nbsp 09:00-18:30</p>
+                                    <p class="times"><strong>Tue:</strong> &nbsp 08:30-18:30</p>
+                                    <p class="times"><strong>Wed:</strong> &nbsp 08:30-18:30</p>
                                     <p class="times"><strong>Thu:</strong> &nbsp 08:30-17:30</p>
                                     <p class="times"><strong>Fri:</strong> &nbsp 08:30-17:30</p>
                                     <p class="times"><strong>Sat:</strong> &nbsp 08:00-16:00</p>
@@ -607,7 +621,7 @@
                     <p class="p-heading">For any general enquiries or booking questions, please use the form below.</p>
                     <br>
                     <ul class="list-unstyled li-space-lg">
-                        <li style="text-decoration:underline;">WARGRAVE:</li>
+                        <li style="text-decoration:underline;">TWYFORD:</li>
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;5 Church Street, Twyford, Reading, RG10 9DR</li>
                         <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189343946">0118 934 3946</a></li>
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
@@ -616,7 +630,7 @@
                         <hr style="margin:auto;border-radius:5px; opacity:0.6;height:3px; width:70%; border-width:0; color:white; background-color:white">
                     </div>
                     <ul class="list-unstyled li-space-lg">
-                        <li style="text-decoration:underline;">TWYFORD:</li>
+                        <li style="text-decoration:underline;">WARGRAVE:</li>
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;60 High Street, Wargrave, Reading, RG10 8BY</li>
                         <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189401688">0118 940 1688</a></li>
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
@@ -788,7 +802,7 @@
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
     <!-- Include cookiealert script -->
-    <script src="js/cookiealert.js"></script>
+    <script src="js/cookiealert.js?1"></script>
 </body>
 
 </html>

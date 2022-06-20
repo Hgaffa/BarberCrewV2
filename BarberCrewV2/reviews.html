@@ -100,8 +100,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html#gallery">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="reviews.html">Reviews</a>
+                    <li class="nav-item dropdown a">
+                        <a class="nav-link dropdown-toggle active" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Reviews</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" onClick="setCookie('Twyford')" href="reviews.html">Twyford</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" onClick="setCookie('Wargrave')" href="reviews.html">Wargrave</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" onClick="setCookie('Wokingham')" href="reviews.html">Wokingham</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html#contact">Contact Us</a>
@@ -139,12 +153,23 @@
     <!-- Reviews -->
     <section style="text-align:center;background-color:#0e2141;" id="reviews">
         <div style="padding-top:40px;" class="container">
-            <h2 style="font-family:bebas-regular;color:white;letter-spacing:0.2rem;">- Reviews -</h2>
+            <h2 style="font-family:bebas-regular;letter-spacing:0.5rem;">
+                <label id="review_title" style="color:white"> Reviews </label>
+            </h2>
             <div style="padding-top:20px" class="row">
                 <div class="col-lg-8 mx-auto">
                     <div id="bookapp-reviews-widget" />
                     <script id="reviews_script" type="text/javascript">
-                        ! function(e, t, n) {
+                        var check = localStorage.getItem("site");
+                        console.log("Local Storage: " + check);
+                        if (check == "Wokingham") {
+                            check = "barbercrew-wokingham";
+                            console.log("W");
+                        } else if (check == "Wargrave") {
+                            check = "barbercrew-wargrave";
+                        } else {
+                            check = "barbercrew";
+                        }! function(e, t, n) {
                             var u = n.queue || [];
                             e.BookAppWidgetReady = n = function(e) {
                                 n.queue.push(e)
@@ -157,7 +182,7 @@
                             }, !1), i.parentNode.insertBefore(a, i)
                         }(window, document, window.BookAppWidgetReady || function() {});
                         BookAppWidgetReady(function() {
-                            BookApp.widget('#bookapp-reviews-widget', 'barbercrew', {
+                            BookApp.widget('#bookapp-reviews-widget', check, {
                                 initial: BookApp.Page.Reviews
                             });
                         });
@@ -167,6 +192,15 @@
         </div>
         </div>
     </section>
+
+    <!--Initialise Values-->
+    <script>
+        if (localStorage.getItem("site") != null) {
+            document.getElementById("review_title").innerHTML = "- " + localStorage.getItem("site") + " Reviews -";
+        } else {
+            document.getElementById("review_title").innerHTML = "- " + "Twyford" + " Reviews -";
+        }
+    </script>
 
     <!-- Footer -->
     <div class="footer">
@@ -275,7 +309,7 @@
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
     <!-- Include cookiealert script -->
-    <script src="js/cookiealert.js"></script>
+    <script src="js/cookiealert.js?1"></script>
 </body>
 
 </html>
