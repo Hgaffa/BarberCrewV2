@@ -40,6 +40,14 @@ Colors:
 
 /**************************/
 
+.subtext {
+    font-family:bebas-regular;
+    color:#0e2141;
+    letter-spacing:0.2rem;
+    padding-top:3rem;
+    text-decoration: underline;
+}
+
 .toc .p {
     color: white !important;
 }
