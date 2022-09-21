@@ -4,55 +4,68 @@
     height: auto;
     padding-right: 20px;
 }
-.card{
-    outline: 5px solid white;
-    background-color: #d7a75b;
+
+.card {
+    background-color: #213844;
     margin-bottom: 3rem;
 }
-.card-title{
-    color:#0e2141;
+
+.card-title {
+    color: white;
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: 700;
 }
-.card-link{
-    color:white;
+
+.card-link {
+    color: white;
 }
-.card-buttons{
+
+.job-description {
+    margin: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-buttons {
     float: right;
-    padding-left: 0.5rem;
     letter-spacing: 0.15rem;
     font-size: 1.2rem;
     font-weight: 500;
+    background-color: #d7a75b;
 }
-.card-text{
-    color: #0e2141;
+
+.card-text {
+    color: white;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
 }
-.tags{
+
+.tags {
     float: left;
     margin-bottom: 0px;
 }
-span.tag{
-    background-color: #0e2141;;
-    color: white;
+
+span.tag {
+    background-color: #d7a75b;
+    ;
+    color: #0e2141;
     padding: 3px;
     letter-spacing: 0.2rem;
 }
-.jobs{
+
+.jobs {
     max-width: 60%;
     margin: auto;
     padding-top: 0px;
 }
 
 .form-group.required .required-label:before {
-    content:"* ";
-    color:red;
+    content: "* ";
+    color: red;
 }
 
 @media screen and (max-width: 600px) {
-    .jobs{
+    .jobs {
         max-width: 80%;
         margin: auto;
         padding-top: 0px;
@@ -60,11 +73,11 @@ span.tag{
 }
 
 @media screen and (max-width: 400px) {
-    .tags{
+    .tags {
         width: 100%;
     }
-    .card-buttons{
-        float: right;
+    .card-buttons {
+        float: left;
         margin-top: 0.5rem;
         letter-spacing: 0.15rem;
         font-size: 1rem;
