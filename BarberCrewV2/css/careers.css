@@ -32,6 +32,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     background-color: #d7a75b;
+    margin-top: 20px;
 }
 
 .card-text {
@@ -47,9 +48,9 @@
 
 span.tag {
     background-color: #d7a75b;
-    ;
     color: #0e2141;
-    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     letter-spacing: 0.2rem;
 }
 
