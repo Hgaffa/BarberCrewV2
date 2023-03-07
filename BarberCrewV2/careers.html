@@ -40,6 +40,19 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158245512-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158245512-1');
+    </script>
 </head>
 
 <body style="background-color:#0e2141 !important;">
@@ -153,10 +166,23 @@
             <div class="card-body">
                 <div class="vl"></div>
                 <p class="card-title">Senior Barber</p>
-                <p class="card-text">As a Senior Barber at Barber Crew, you will be working in one of our three state of the art studios, providing a range of in house services to a diverse customer base.</p>
+                <p class="card-text">As a Senior Barber at Barber Crew, you will be working in one of our three state of the art studios, providing a range of in-house services to a diverse customer base.</p>
                 <p class="tags"><span class="tag">Senior</span>&ensp;<span class="tag">Experienced</span>&ensp;<span class="tag">Part-Time</span>&ensp;<span class="tag">Full-Time</span></p>
                 <!-- Button trigger modal -->
                 <button type="button" class="card-buttons card-link btn" data-bs-toggle="modal" data-bs-target="#seniorBarberModal">
+                            Apply Now
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="vl"></div>
+                <p class="card-title">Hairdresser</p>
+                <p class="card-text">As an experienced Hairdresser at Barber Crew, you will be working in one of our three state of the art studios, helping our diverse customer base achieve their hair goals whilst providing a range of in-house services.</p>
+                <p class="tags"><span class="tag">Experienced</span>&ensp;<span class="tag">Full-Time</span>&ensp;<span class="tag">Part-Time</span></p>
+                <!-- Button trigger modal -->
+                <button type="button" class="card-buttons card-link btn" data-bs-toggle="modal" data-bs-target="#hairdresserModal">
                             Apply Now
                 </button>
             </div>
@@ -397,6 +423,75 @@
             </div>
         </div>
     </div>
+
+    <!-- Senior Barber Modal -->
+    <div class="modal fade" id="hairdresserModal" tabindex="-1" aria-labelledby="hairdresserModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hairdresserModalLabel">Hairdresser - Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="job-description">
+                    <p style="font-family: 'Poppins';font-size: 1rem;">Job responsibilities</p>
+                    <ul style="font-family: 'Poppins'; font-size:0.8rem; line-height:1.2rem;">
+                        <li>Working with the team and delivering a professional, high level service to customers, whilst maintaining the facilities to a fantastic standard.</li>
+                        <li>Plan a clients hair journey and help them achieve their hair goals.</li>
+                        <li>Engage with all of our clients and create a relationship with our passionate team.</li>
+                        <li>Working consistently to bring new customers to the studio through social media, leafleting, and word of mouth.</li>
+                    </ul>
+                    <p style="font-family: 'Poppins';font-size: 1rem;">Essential Requirements</p>
+                    <ul style="font-family: 'Poppins'; font-size:0.8rem; line-height:1.2rem;">
+                        <li>High energy, ambitious and professional</li>
+                        <li>At least 2-3 years of experience in hairdressing</li>
+                        <li>Must have the right to work in the UK</li>
+                        <li>Must be able to drive, or be comfortable with commuting to Twyford</li>
+                    </ul>
+                    <p style="font-family: 'Poppins'; font-size:0.8rem; line-height:1.2rem;">Job Types: Full-time, Part-time Contract</p>
+                    <p style="font-family: 'Poppins';font-size: 1rem;">Benefits</p>
+                    <ul style="font-family: 'Poppins'; font-size:0.8rem; line-height:1.2rem;">
+                        <li>Bonus/Commission scheme, Company events and incentives, professional training allowance. Full time contracts and self-employed contracts available</li>
+                    </ul>
+                    <p style="font-family: 'Poppins'; font-size:0.8rem; line-height:1.2rem;">We are an equal opportunities employer and look forward to seeing a diverse range of applicants!</p>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" enctype="multipart/form-data" action="assets/applicationEmail.php" onsubmit="return validateApplication(this)">
+                        <div class="form-group required">
+                            <div class="mb-3 row">
+                                <!-- Hidden field for getting the vacancy name -->
+                                <input type="hidden" name="vacancyName" value="Hairdresser">
+                                <div class="col">
+                                    <label for="firstname" class="required-label form-label">First Name</label>
+                                    <input required type="text" class="required form-control" name="firstName" id="firstname">
+                                </div>
+                                <div class="col">
+                                    <label for="lastname" class="required-label form-label">Last Name</label>
+                                    <input required type="text" class="form-control" name="lastName" id="lastname">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="required-label form-label">Email address</label>
+                                <input required type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="required-label form-label">Phone Number</label>
+                                <input required type="number" class="form-control" name="number" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cvupload" class="form-label">CV Upload</label>
+                                <input type="file" name="cvUpload" class="form-control" aria-describedby="cvuploadhelp" id="cvupload" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                <div id="cvuploadhelp" class="form-text">Word document and PDF files under 3MB are accepted</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" style="float:right;" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- File Upload Validation Script -->
     <script type="text/javascript">

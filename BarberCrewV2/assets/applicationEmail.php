@@ -8,8 +8,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
 
 
 $nameSanitized;
@@ -131,10 +131,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     //send the message, check for errors
     try {
         $mail->send();
-        header("location:./careers.html");
+        header("location:/../careers.html");
         console.log("Application has been successfully submitted");
     } catch (Exception $e) {
-        header("location:./careers.html"); 
+        header("location:/../careers.html"); 
         console.log("Mailer Error: " . $mail->ErrorInfo);
     }
 }

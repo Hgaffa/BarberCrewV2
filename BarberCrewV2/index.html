@@ -32,7 +32,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome-all.min.css?ver=1.1" rel="stylesheet" type="text/css">
     <link href="css/swiper.css?ver=1.1" rel="stylesheet">
-    <link href="css/styles.css?ver=1.2" rel="stylesheet">
+    <link href="css/styles.css?ver=1.3" rel="stylesheet">
     <link href="css/footer.css?ver=1.1" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -191,10 +191,10 @@
             var video = document.getElementById('video-background');
             var source = document.getElementById('video-background-source');
             var screenWidth = $(window).width();
-            if (screenWidth < 800) {
-                source.setAttribute('src', 'images/video_banner/background_vid_mobile-min.mp4');
+            if (screenWidth < 1000) {
+                source.setAttribute('src', 'images/video_banner/header_video_mobile.mp4');
             } else {
-                source.setAttribute('src', 'images/video_banner/background_vid-min.mp4');
+                source.setAttribute('src', 'images/video_banner/header_video_desktop.mp4');
             }
             video.load();
             video.play();
@@ -232,6 +232,16 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <!-- Wokingham Banner
+    <section style="font-family:bebas-regular; background-color:#0e2141" id="services" class="cards-1">
+        <div style="padding:20px;">
+            <div style="padding:20px;text-align:center !important;border: 2px solid #f69c55;" class="text-container">
+                <h2 style="padding-top:5px;font-family:bebas-regular;color:#d7a75b;letter-spacing:0.2rem;line-height:120%;">BARBER CREW WOKINGHAM HAS RECENTLY BEEN REFURBISHED AND IS NOW OPEN TO ALL!</h2>
+                <h2 style="font-family:bebas-regular;color:white;letter-spacing:0.2rem;line-height:120%;">BOOK NOW TO SECURE YOUR APPOINTMENT</h2>
+            </div>
+        </div>
+    </section>-->
 
     <!-- Services -->
     <section style="padding-top:40px;font-family:bebas-regular; background-color:#0e2141" id="services" class="cards-1">
@@ -398,6 +408,24 @@
 
                                 <div class="swiper-slide">
                                     <picture>
+                                        <source srcset="images\team\jurgen.png" type="image/png">
+                                        <img width=200px; src="images\team\jurgen.png" alt="Barber Crew Team Jurgen">
+                                        <div class="testimonial-author">Jurgen</div>
+                                        <div class="testimonial-position">Skin Fades, Luxury Shaves, Classic Cuts & Kids Hair</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images\team\jp.png" type="image/png">
+                                        <img width=200px; src="images\team\jurgen.png" alt="Barber Crew Team JP">
+                                        <div class="testimonial-author">JP</div>
+                                        <div class="testimonial-position">Skin Fades, Classic Haircuts & Kids Hair</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
                                         <source srcset="images\team\jack.avif" type="image/avif">
                                         <img width=200px; src="images\team\jack.png" alt="Barber Crew Team Jack">
                                         <div class="testimonial-author">Jack</div>
@@ -425,10 +453,28 @@
 
                                 <div class="swiper-slide">
                                     <picture>
-                                        <source srcset="images\team\kyle.avif" type="image/avif">
-                                        <img width=200px; src="images\team\kyle.png" alt="Barber Crew Team Kyle">
-                                        <div class="testimonial-author">Kyle</div>
+                                        <source srcset="images\team\lucas.png" type="image/png">
+                                        <img width=200px; src="images\team\lucas.png" alt="Barber Crew Team Lucas">
+                                        <div class="testimonial-author">Lucas</div>
+                                        <div class="testimonial-position">Skin Fade Specialist, Beard Trims & Timeless Classic Cuts</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images\team\aron.png" type="image/png">
+                                        <img width=200px; src="images\team\kyle.png" alt="Barber Crew Team Aron">
+                                        <div class="testimonial-author">Aron</div>
                                         <div class="testimonial-position">Skin Fade Specialist, Classic Haircuts</div>
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images\team\aimie.png" type="image/png">
+                                        <img width=200px; src="images\team\aimie.png" alt="Barber Crew Team Aimie">
+                                        <div class="testimonial-author">Aimie</div>
+                                        <div class="testimonial-position">Junior Barber - One Grades & Two Grade Crops</div>
                                     </picture>
                                 </div>
 
@@ -601,17 +647,17 @@
                     <!-- Counter -->
                     <div class="counter-container">
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="564" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="985" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">FOLLOWERS</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="33" data-purecounter-duration="1.5" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1.5" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">SERVICES</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="475" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="585" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">Five Star Reviews</div>
                         </div>
                         <!-- end of counter-cell -->
@@ -663,7 +709,7 @@
                     <ul class="list-unstyled li-space-lg">
                         <li style="text-decoration:underline;">WOKINGHAM:</li>
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;31 Broad St, Wokingham RG40 1AU</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189401688">0118 979 4122</a></li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189794122">0118 979 4122</a></li>
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
                     </ul>
                     <br>
