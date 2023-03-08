@@ -1647,6 +1647,7 @@ a:hover {
         margin-bottom: 0;
     }
     .navbar .nav-item .nav-link {
+        line-height: 1.4rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
