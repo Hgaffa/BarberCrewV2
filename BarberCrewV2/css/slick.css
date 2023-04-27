@@ -1,0 +1,49 @@
+/*
+    CUSTOM SLICK STYLES FOR SLIDERS
+*/
+
+.slick-next {
+    right: 25px !important;
+}
+
+.slick-prev {
+    left: 25px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: White !important;
+}
+
+.slick-dots li button:before {
+    color: rgb(148, 143, 143) !important;
+}
+
+.team-container {
+    text-align: center;
+    background: #0e2141;
+    padding: 100px 0;
+}
+
+.team-slider {
+    padding-bottom: 30px;
+}
+
+.team-slider .slick-slide img {
+    display: initial;
+}
+
+.team-slider .barber-name {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.75rem;
+    font-family: "bebas-regular";
+    color: #d7a75b;
+}
+
+.team-slider .barber-skills {
+    color: white;
+    margin: 0 20px;
+    font-size: 24px;
+    font-style: italic;
+}

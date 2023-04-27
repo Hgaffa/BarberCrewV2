@@ -35,6 +35,10 @@
     <link href="css/swiper.css?ver=1.1" rel="stylesheet">
     <link href="css/styles.css?ver=1.3" rel="stylesheet">
     <link href="css/footer.css?ver=1.1" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -183,7 +187,6 @@
         <!-- end of header-content -->
 
     </header>
-    <!-- end of header -->
     <!-- end of header -->
 
     <!-- Video Update Script -->
@@ -359,138 +362,63 @@
         chosen_studio.addEventListener('change', clck);
     </script>
 
-    <!-- The Team -->
-    <div style="padding-top:100px;" class="slider-1" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\ruby.avif" type="image/avif">
-                                        <img width=200px; src="images\team\ruby.png" alt="Barber Crew Team Ruby">
-                                        <div class="testimonial-author">Ruby</div>
-                                        <div class="testimonial-position">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\sunny.avif" type="image/avif">
-                                        <img width=200px; src="images\team\sunny.png" alt="Barber Crew Team Sunny">
-                                        <div class="testimonial-author">Sunny</div>
-                                        <div class="testimonial-position">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\marius.avif" type="image/avif">
-                                        <img width=200px; src="images\team\marius.png" alt="Barber Crew Team Marius">
-                                        <div class="testimonial-author">Marius</div>
-                                        <div class="testimonial-position">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\jurgen.png" type="image/png">
-                                        <img width=200px; src="images\team\jurgen.png" alt="Barber Crew Team Jurgen">
-                                        <div class="testimonial-author">Jurgen</div>
-                                        <div class="testimonial-position">Skin Fades, Luxury Shaves, Classic Cuts & Kids Hair</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\jp.png" type="image/png">
-                                        <img width=200px; src="images\team\jurgen.png" alt="Barber Crew Team JP">
-                                        <div class="testimonial-author">JP</div>
-                                        <div class="testimonial-position">Skin Fades, Classic Haircuts & Kids Hair</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\jack.png" type="image/png">
-                                        <img width=200px; src="images\team\jack.png" alt="Barber Crew Team Jack">
-                                        <div class="testimonial-author">Jack</div>
-                                        <div class="testimonial-position">Classic Haircuts, Luxury Shaves, Skin Fades, Kids Hair</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\joe.avif" type="image/avif">
-                                        <img width=200px; src="images\team\joe.png" alt="Barber Crew Team Joe">
-                                        <div class="testimonial-author">Joe</div>
-                                        <div class="testimonial-position">Ladies Hair, Classic Haircuts, Kids Hair, Ear Singeing</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\alison.png" type="image/png">
-                                        <img width=200px; src="images\team\alison.png" alt="Barber Crew Team Alison">
-                                        <div class="testimonial-author">Alison</div>
-                                        <div class="testimonial-position">Classic Haircuts, Senior & Scissor Cuts, Kid Hair</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\lucas.png" type="image/png">
-                                        <img width=200px; src="images\team\lucas.png" alt="Barber Crew Team Lucas">
-                                        <div class="testimonial-author">Lucas</div>
-                                        <div class="testimonial-position">Skin Fade Specialist, Beard Trims & Timeless Classic Cuts</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\aron.png" type="image/png">
-                                        <img width=200px; src="images\team\kyle.png" alt="Barber Crew Team Aron">
-                                        <div class="testimonial-author">Aron</div>
-                                        <div class="testimonial-position">Skin Fade Specialist, Classic Haircuts</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\aimie.png" type="image/png">
-                                        <img width=200px; src="images\team\aimie.png" alt="Barber Crew Team Aimie">
-                                        <div class="testimonial-author">Aimie</div>
-                                        <div class="testimonial-position">Junior Barber - One Grades & Two Grade Crops</div>
-                                    </picture>
-                                </div>
-
-
-                            </div>
-                            <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div>
-                        <!-- end of swiper-container -->
-                    </div>
-                    <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div>
-                <!-- end of col -->
+    <!--Team Slider-->
+    <div id="team" class="team-container">
+        <div class="team-slider">
+            <div>
+                <img width=200px; src="images\team\ruby.png" alt="Barber Crew Team Ruby">
+                <div class="barber-name">Ruby</div>
+                <div class="barber-skills">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
             </div>
-            <!-- end of row -->
+            <div>
+                <img width=200px; src="images\team\sunny.png" alt="Barber Crew Team Sunny">
+                <div class="barber-name">Sunny</div>
+                <div class="barber-skills">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\marius.png" alt="Barber Crew Team Marius">
+                <div class="barber-name">Marius</div>
+                <div class="barber-skills">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\jp.png" alt="Barber Crew Team JP">
+                <div class="barber-name">JP</div>
+                <div class="barber-skills">Skin Fades, Classic Haircuts & Kids Hair</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\jack.png" alt="Barber Crew Team Jack">
+                <div class="barber-name">Jack</div>
+                <div class="barber-skills">Classic Haircuts, Luxury Shaves, Skin Fades, Kids Hair</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\joe.png" alt="Barber Crew Team Joe">
+                <div class="barber-name">Joe</div>
+                <div class="barber-skills">Ladies Hair, Classic Haircuts, Kids Hair, Ear Singeing</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\alison.png" alt="Barber Crew Team Alison">
+                <div class="barber-name">Alison</div>
+                <div class="barber-skills">Classic Haircuts, Senior & Scissor Cuts, Kid Hair</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\lucas.png" alt="Barber Crew Team Lucas">
+                <div class="barber-name">Lucas</div>
+                <div class="barber-skills">Skin Fade Specialist, Beard Trims & Timeless Classic Cuts</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\aron.png" alt="Barber Crew Team Aron">
+                <div class="barber-name">Aron</div>
+                <div class="barber-skills">Skin Fade Specialist, Classic Haircuts</div>
+            </div>
+
+            <div>
+                <img width=200px; src="images\team\aimie.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Aimie</div>
+                <div class="barber-skills">Junior Barber - One Grades & Two Grade Crops</div>
+            </div>
         </div>
-        <!-- end of container -->
     </div>
+
 
     <!-- Information
     <div class="split">
@@ -551,7 +479,7 @@
                                     <p class="times"><strong>Wed:</strong> &nbsp 08:30-18:00</p>
                                     <p class="times"><strong>Thu:</strong> &nbsp 08:30-18:00</p>
                                     <p class="times"><strong>Fri:</strong> &nbsp 08:30-18:00</p>
-                                    <p class="times"><strong>Sat:</strong> &nbsp 08:00-16:00</p>
+                                    <p class="times"><strong>Sat:</strong> &nbsp 08:00-17:00</p>
                                     <p class="times"><strong>Sun:</strong> &nbsp 10:00-17:00</p>
                                 </div>
                             </div>
@@ -598,47 +526,49 @@
     </div>
 
     <!-- Gallery -->
-    <div style="padding-bottom:70px;" id="gallery" class="gallery-container">
-        <picture>
-            <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
-            <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Haircut" class="lazyload">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
-            <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
-            <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Beard">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
-            <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Hair Dye">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
-            <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Afro Hair">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
-            <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Eyebrow Threading & Beard Trim">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
-            <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Junior Children Haircut">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
-            <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Long Haircut">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
-            <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Professional Beard & Trim">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
-            <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Curly Hair & Skin Fade">
-        </picture>
+    <div id="gallery" class="gallery-container">
+        <div class="gallery-slider">
+            <picture>
+                <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
+                <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
+                <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
+                <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Beard">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
+                <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Hair Dye">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
+                <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Afro Hair">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
+                <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Eyebrow Threading & Beard Trim">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
+                <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Junior Children Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
+                <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Long Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
+                <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Professional Beard & Trim">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
+                <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Curly Hair & Skin Fade">
+            </picture>
+        </div>
     </div>
 
     <!-- Contact -->
@@ -833,7 +763,15 @@
     <!-- Custom scripts -->
     <!-- Include cookiealert script -->
     <script src="js/cookiealert.js?1"></script>
-    <script src="https://io.dropinblog.com/embedjs/74290fa3-bd9a-44fe-bf9b-44c7a067d11f.js"></script>
+    <!-- Medium Embed Feed -->
+    <script src="js/mediumfeed.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+
 </body>
 
 </html>
