@@ -18,10 +18,20 @@
     color: rgb(148, 143, 143) !important;
 }
 
+
+/* BLOG SLIDER STYLES */
+
+.blog-container .slick-initialized .slick-slide {
+    display: grid;
+}
+
+
+/* TEAM SLIDER STYLES */
+
 .team-container {
     text-align: center;
     background: #0e2141;
-    padding: 100px 0;
+    padding: 3rem 0;
 }
 
 .team-slider {
