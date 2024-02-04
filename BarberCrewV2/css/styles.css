@@ -34,6 +34,37 @@ Colors:
 
 /* NEW STYLES 2023 */
 
+
+/* Disclaimer Text */
+
+.disclaimer-text-container {
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    color: white;
+    border: medium solid white;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .disclaimer-text-container {
+        width: 60%;
+    }
+}
+
+.disclaimer-text-header {
+    text-align: center !important;
+    font-size: 1.5rem;
+}
+
+.disclaimer-text-list {
+    padding-top: 10px;
+    font-size: 1.2rem
+}
+
+
+/* End Disclaimer Text */
+
 .section-header {
     align-items: center;
     display: block;
@@ -884,12 +915,10 @@ a:hover {
 
 .header #video-background {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-bottom: 1px solid #0e2141;
     overflow: hidden;
 }

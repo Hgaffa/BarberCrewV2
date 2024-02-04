@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: true,
+        arrows: false,
         dots: true,
         responsive: [{
             breakpoint: 800,

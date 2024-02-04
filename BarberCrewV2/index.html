@@ -33,9 +33,9 @@
     <link href="css/banner.css?ver=1.2" rel="stylesheet">
     <link href="css/fontawesome-all.min.css?ver=1.1" rel="stylesheet" type="text/css">
     <link href="css/swiper.css?ver=1.1" rel="stylesheet">
-    <link href="css/styles.css?ver=1.4" rel="stylesheet">
+    <link href="css/styles.css?ver=1.5" rel="stylesheet">
     <link href="css/footer.css?ver=1.1" rel="stylesheet">
-    <link href="css/blog.css?ver=1.2" rel="stylesheet">
+    <link href="css/blog.css?ver=2.0" rel="stylesheet">
     <link href="css/buttons.css?ver=1.2" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -175,9 +175,9 @@
                 <div class="row">
                     <div class="col-lg-12" style="z-index: 3;">
                         <a href="index.html" style="position: relative;"><img class="header-banner-logo" src="images/website_banner.png" alt="Barber Crew Logo Overlay"></a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Book Now - Twyford</a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Book Now - Wargrave</a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wokingham.html" class="animBtn themeA">Book Now - Wokingham</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Twyford</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Wargrave</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wokingham.html" class="animBtn themeA">Wokingham</a>
                     </div>
                 </div>
                 <!-- end of col -->
@@ -185,7 +185,6 @@
             <!-- end of row -->
         </div>
         <!-- end of container -->
-        </div>
         <!-- end of header-content -->
 
     </header>
@@ -198,9 +197,9 @@
             var source = document.getElementById('video-background-source');
             var screenWidth = $(window).width();
             if (screenWidth < 1000) {
-                source.setAttribute('src', 'images/video_banner/header_video_mobile.mp4');
+                source.setAttribute('src', 'images/video_banner/mobile_v3.mp4');
             } else {
-                source.setAttribute('src', 'images/video_banner/header_video_desktop.mp4');
+                source.setAttribute('src', 'images/video_banner/desktop_v3.mp4');
             }
             video.load();
             video.play();
@@ -463,55 +462,44 @@
     <div id="team" class="team-container">
         <div class="team-slider">
             <div>
+                <img width=200px; src="images\team\mo.png?v=2" alt="Barber Crew Team Mohammed">
+                <div class="barber-name">(Mo) NoorBlendz</div>
+                <div class="barber-skills">Studio Manager - Barber Crew Wargrave</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\djed.png" alt="Barber Crew Team Djed">
+                <div class="barber-name">Djed</div>
+                <div class="barber-skills">Studio Manager - Barber Crew Wokingham</div>
+            </div>
+            <div>
                 <img width=200px; src="images\team\ruby.png" alt="Barber Crew Team Ruby">
                 <div class="barber-name">Ruby</div>
-                <div class="barber-skills">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
+                <div class="barber-skills">Principal Stylist</div>
             </div>
             <div>
-                <img width=200px; src="images\team\sunny.png" alt="Barber Crew Team Sunny">
+                <img width=200px; src="images\team\sunny.png?v=2" alt="Barber Crew Team Sunny">
                 <div class="barber-name">Sunny</div>
-                <div class="barber-skills">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
-            </div>
-            <div>
-                <img width=200px; src="images\team\marius.png" alt="Barber Crew Team Marius">
-                <div class="barber-name">Marius</div>
-                <div class="barber-skills">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
-            </div>
-            <div>
-                <img width=200px; src="images\team\jp.png" alt="Barber Crew Team JP">
-                <div class="barber-name">JP</div>
-                <div class="barber-skills">Skin Fades, Classic Haircuts & Kids Hair</div>
-            </div>
-            <div>
-                <img width=200px; src="images\team\jack.png" alt="Barber Crew Team Jack">
-                <div class="barber-name">Jack</div>
-                <div class="barber-skills">Classic Haircuts, Luxury Shaves, Skin Fades, Kids Hair</div>
-            </div>
-            <div>
-                <img width=200px; src="images\team\joe.png" alt="Barber Crew Team Joe">
-                <div class="barber-name">Joe</div>
-                <div class="barber-skills">Ladies Hair, Classic Haircuts, Kids Hair, Ear Singeing</div>
+                <div class="barber-skills">Principal Barber</div>
             </div>
             <div>
                 <img width=200px; src="images\team\alison.png" alt="Barber Crew Team Alison">
                 <div class="barber-name">Alison</div>
-                <div class="barber-skills">Classic Haircuts, Senior & Scissor Cuts, Kid Hair</div>
+                <div class="barber-skills">Senior Barber</div>
             </div>
-            <div>
-                <img width=200px; src="images\team\lucas.png" alt="Barber Crew Team Lucas">
-                <div class="barber-name">Lucas</div>
-                <div class="barber-skills">Skin Fade Specialist, Beard Trims & Timeless Classic Cuts</div>
-            </div>
-            <div>
-                <img width=200px; src="images\team\aron.png" alt="Barber Crew Team Aron">
-                <div class="barber-name">Aron</div>
-                <div class="barber-skills">Skin Fade Specialist, Classic Haircuts</div>
-            </div>
-
             <div>
                 <img width=200px; src="images\team\aimie.png" alt="Barber Crew Team Aimie">
                 <div class="barber-name">Aimie</div>
-                <div class="barber-skills">Junior Barber - One Grades & Two Grade Crops</div>
+                <div class="barber-skills">Barber</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\becca.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Becca</div>
+                <div class="barber-skills">Stylist</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\charlie.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Charlie</div>
+                <div class="barber-skills">Barber</div>
             </div>
         </div>
     </div>
@@ -580,17 +568,17 @@
                     <!-- Counter -->
                     <div class="counter-container">
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="1017" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="5428" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">FOLLOWERS</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="36" data-purecounter-duration="1.5" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1.5" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">SERVICES</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="735" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="1238" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">Five Star Reviews</div>
                         </div>
                         <!-- end of counter-cell -->
@@ -684,7 +672,8 @@
                 <div class="col-sm-12 col-md-6">
                     <h6 style="text-align:center">About</h6>
                     <p class="footer-mobile text-justify"> At Barber Crew, our talented and experienced team, will make you look and feel great. We are the best in the Twyford, Wargrave & Wokingham areas for Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two
-                        Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's</p>
+                        Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's.</p>
+                    <p class="footer-mobile text-justify"> Every Barber Crew studio operates with 24/7 audio and video security surveilence.</p>
                 </div>
 
                 <div class="col-xs-6 col-md-3">
@@ -709,8 +698,12 @@
             </div>
             <div class="col-lg-12">
                 <div class="footer-mobile footer-col first">
-                    Copyright &copy; 2023 All Rights Reserved by
-                    <a href="#">Barber Crew</a>.
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved by Barber Crew</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
                 <!-- end of footer-col -->
                 <div class="footer-col second">
@@ -790,12 +783,12 @@
     <!-- Include cookiealert script -->
     <script src="js/cookiealert.js?1"></script>
     <!-- Medium Embed Feed -->
-    <script src="js/mediumfeed.js"></script>
+    <script src="js/mediumfeed.js?v=3.0"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slick.js?ver=1.1"></script>
 
 
 </body>

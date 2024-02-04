@@ -7,7 +7,6 @@ fetch(url)
     .then((data) => {
         const res = data.items;
         const posts = res.filter(item => item.categories.length > 0);
-        console.log(posts);
 
         function toText(node) {
             let tag = document.createElement('div')
@@ -25,7 +24,7 @@ fetch(url)
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: true,
+                arrows: false,
                 dots: true,
                 responsive: [{
                     breakpoint: 800,
@@ -48,7 +47,6 @@ fetch(url)
         posts.slice(0, 3).forEach((item) => {
             output = `
             <div class="blog-card">
-                <img class="img-container" width=200px; src="${item.thumbnail}"></img>
                 <div class="blog-card-content">
                     <a href="${item.link}"><h1>${item.title}</h1></a>
                     <p class="excerpt">${item.content.slice(0,155)}...</p>
