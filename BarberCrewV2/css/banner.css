@@ -1,0 +1,22 @@
+.footer_banner {
+    background-color: #0e2141;
+}
+
+.footer_banner .banner-desktop {
+    width: 100%;
+    display: block;
+}
+
+.footer_banner .banner-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .footer_banner .banner-desktop {
+        display: none;
+    }
+    .footer_banner .banner-mobile {
+        display: block;
+        width: 100%;
+    }
+}

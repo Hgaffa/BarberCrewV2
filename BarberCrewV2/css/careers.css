@@ -1,0 +1,86 @@
+.vl {
+    float: left;
+    border-left: 5px solid #0e2141;
+    height: auto;
+    padding-right: 20px;
+}
+
+.card {
+    background-color: #213844;
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+.card-link {
+    color: white;
+}
+
+.job-description {
+    margin: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-buttons {
+    float: right;
+    letter-spacing: 0.15rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #d7a75b;
+    margin-top: 20px;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.tags {
+    float: left;
+    margin-bottom: 0px;
+}
+
+span.tag {
+    background-color: #d7a75b;
+    color: #0e2141;
+    padding-left: 3px;
+    padding-right: 3px;
+    letter-spacing: 0.2rem;
+}
+
+.jobs {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.form-group.required .required-label:before {
+    content: "* ";
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .jobs {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tags {
+        width: 100%;
+    }
+    .card-buttons {
+        float: left;
+        margin-top: 0.5rem;
+        letter-spacing: 0.15rem;
+        font-size: 1rem;
+    }
+}

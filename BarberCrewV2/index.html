@@ -30,10 +30,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/banner.css?ver=1.2" rel="stylesheet">
     <link href="css/fontawesome-all.min.css?ver=1.1" rel="stylesheet" type="text/css">
     <link href="css/swiper.css?ver=1.1" rel="stylesheet">
-    <link href="css/styles.css?ver=1.1" rel="stylesheet">
+    <link href="css/styles.css?ver=1.5" rel="stylesheet">
     <link href="css/footer.css?ver=1.1" rel="stylesheet">
+    <link href="css/blog.css?ver=2.0" rel="stylesheet">
+    <link href="css/buttons.css?ver=1.2" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -122,6 +129,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
@@ -165,9 +175,9 @@
                 <div class="row">
                     <div class="col-lg-12" style="z-index: 3;">
                         <a href="index.html" style="position: relative;"><img class="header-banner-logo" src="images/website_banner.png" alt="Barber Crew Logo Overlay"></a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Book Now - Twyford</a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Book Now - Wargrave</a>
-                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wokingham.html" class="animBtn themeA">Book Now - Wokingham</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_twyford.html" class="animBtn themeA">Twyford</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wargrave.html" class="animBtn themeA">Wargrave</a>
+                        <a style="width:100%;font-family:bebas-regular;font-size:3.5rem;" href="book_wokingham.html" class="animBtn themeA">Wokingham</a>
                     </div>
                 </div>
                 <!-- end of col -->
@@ -175,11 +185,9 @@
             <!-- end of row -->
         </div>
         <!-- end of container -->
-        </div>
         <!-- end of header-content -->
 
     </header>
-    <!-- end of header -->
     <!-- end of header -->
 
     <!-- Video Update Script -->
@@ -188,10 +196,10 @@
             var video = document.getElementById('video-background');
             var source = document.getElementById('video-background-source');
             var screenWidth = $(window).width();
-            if (screenWidth < 800) {
-                source.setAttribute('src', 'images/video_banner/background_vid_mobile-min.mp4');
+            if (screenWidth < 1000) {
+                source.setAttribute('src', 'images/video_banner/mobile_v3.mp4');
             } else {
-                source.setAttribute('src', 'images/video_banner/background_vid-min.mp4');
+                source.setAttribute('src', 'images/video_banner/desktop_v3.mp4');
             }
             video.load();
             video.play();
@@ -355,98 +363,32 @@
         chosen_studio.addEventListener('change', clck);
     </script>
 
-    <!-- The Team -->
-    <div style="padding-top:100px;" class="slider-1" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\patrick.avif" type="image/avif">
-                                        <img src="images\team\patrick.jpg" alt="Barber Crew Team Patrick">
-                                        <div class="testimonial-author">Patrick</div>
-                                        <div class="testimonial-position">Trainee - Afro Hair, Skin Fades & Luxury Shaves</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\gustavo.avif" type="image/avif">
-                                        <img src="images\team\gustavo.jpg" alt="Barber Crew Team Gustavo">
-                                        <div class="testimonial-author">Gustavo</div>
-                                        <div class="testimonial-position">Lockdown Comeback, Head Massages, Skin Fades & Waxing</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\ruby.avif" type="image/avif">
-                                        <img src="images\team\ruby.jpg" alt="Barber Crew Team Ruby">
-                                        <div class="testimonial-author">Ruby</div>
-                                        <div class="testimonial-position">Love Island Treatment, Threading, Waxing, Colouring & Fades</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\sunny.avif" type="image/avif">
-                                        <img src="images\team\sunny.jpg" alt="Barber Crew Team Sunny">
-                                        <div class="testimonial-author">Sunny</div>
-                                        <div class="testimonial-position">Skin Fades, Hair Patterns, Luxury Shaves, Threading & Waxing</div>
-                                    </picture>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="images\team\marius.avif" type="image/avif">
-                                        <img src="images\team\marius.jpg" alt="Barber Crew Team Marius">
-                                        <div class="testimonial-author">Marius</div>
-                                        <div class="testimonial-position">Scissor Cut Specialist, Skin Fades, Hair Colouring & Highlights</div>
-                                    </picture>
-                                </div>
-
-
-                            </div>
-                            <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div>
-                        <!-- end of swiper-container -->
-                    </div>
-                    <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- end of row -->
+    <!-- Blog -->
+    <div style="background-color: #0e2141" id="blog">
+        <div class="section-header">
+            <h2 class="section-heading">Blog Posts</h2>
+            <p class="section-subheading">Stay Up to Date with the Latest Happenings, Events, and Tips from Your Favorite Barbershop by following our Barber Crew blog!</p>
         </div>
-        <!-- end of container -->
+        <div class="blog-container">
+            <div id="blog-feed" class="blog-slider">
+            </div>
+        </div>
+        <div class="blog-button">
+            <a href="https://medium.com/@barbercrew" class="bcrew-btn btn-border btn-circle btn-large">
+              Read More
+            </a>
+        </div>
     </div>
-    <!-- end of slider-1 -->
-    <!-- end of testimonials -->
 
-    <!-- Information 1 -->
+
+    <!-- Information
     <div class="split">
         <div class="area-1">
         </div>
-        <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
         <div class="area-2 bg-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
-                        <!-- Text Container -->
                         <div class="text-container-og">
                             <h2 style="font-family:bebas-regular;color:#0e2141;letter-spacing:0.2rem;">SAFETY AT BARBER CREW</h2>
                             <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;">At Barber Crew, the safety of our customers and staff is at the forefront of our operations. In order to protect our community from COVID-19, we continue to follow goverment guidlines and employ the highest level of covid security:</p>
@@ -454,65 +396,14 @@
                             <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>MASKS -</strong> Masks are preferred within our studios to reduce the spread of the virus but are not required.</p>
                             <p class="p-og;" style="margin-bottom:1rem;font-size:1.1rem;color:#0e2141;"><strong>APPOINTMENTS -</strong> Barber Crew operates with a simple online booking system. This is to reduce the event of mass queuing and to keep our studios safe for our customers. Walk-ins are also welcome!</p>
                         </div>
-                        <!-- end of text-container -->
-                        <!-- end of text container -->
-
                     </div>
-                    <!-- end of col -->
                 </div>
-                <!-- end of row -->
             </div>
-            <!-- end of container -->
         </div>
-        <!-- end of area-2 -->
     </div>
-    <!-- end of split -->
-    <!-- end of details -->
+    -->
 
-    <div style="padding-top:70px; padding-bottom:70px;" id="gallery" class="gallery-container">
-        <picture>
-            <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
-            <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Haircut" class="lazyload">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
-            <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
-            <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Beard">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
-            <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Hair Dye">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
-            <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Afro Hair">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
-            <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Eyebrow Threading & Beard Trim">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
-            <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Junior Children Haircut">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
-            <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Long Haircut">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
-            <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Professional Beard & Trim">
-        </picture>
-        <picture>
-            <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
-            <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Curly Hair & Skin Fade">
-        </picture>
-    </div>
-
-    <!-- Information 2 -->
+    <!-- Opening Times -->
     <div class="split">
         <div class="area-2 bg-gray">
             <div class="container">
@@ -549,48 +440,145 @@
                                     <p class="times"><strong>Wed:</strong> &nbsp 08:30-18:00</p>
                                     <p class="times"><strong>Thu:</strong> &nbsp 08:30-18:00</p>
                                     <p class="times"><strong>Fri:</strong> &nbsp 08:30-18:00</p>
-                                    <p class="times"><strong>Sat:</strong> &nbsp 08:00-16:00</p>
-                                    <p class="times"><strong>Sun:</strong> &nbsp closed</p>
+                                    <p class="times"><strong>Sat:</strong> &nbsp 08:00-17:00</p>
+                                    <p class="times"><strong>Sun:</strong> &nbsp 10:00-17:00</p>
                                 </div>
                             </div>
                             <h3 class="subtext">BOOK AN APPOINTMENT ONLINE OR WALK-IN</h2>
                         </div>
-                        <!-- end of text-container -->
-                        <!-- end of text container -->
                     </div>
-                    <!-- end of col -->
                 </div>
-                <!-- end of row -->
             </div>
-            <!-- end of container -->
         </div>
         <div class="area-3"></div>
-
-        <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
     </div>
-    <!-- end of split -->
-    <!-- end of details -->
+
+    <!--Team Slider-->
+    <div class="section-header">
+        <h2 class="section-heading">The Team</h2>
+        <p class="section-subheading">Our team consists of skilled and experienced barbers who are passionate about their craft. With decades of experience in the industry, they are committed to providing our clients with top-quality grooming services and experiences every time they
+            visit our studios.</p>
+    </div>
+    <div id="team" class="team-container">
+        <div class="team-slider">
+            <div>
+                <img width=200px; src="images\team\mo.png?v=2" alt="Barber Crew Team Mohammed">
+                <div class="barber-name">(Mo) NoorBlendz</div>
+                <div class="barber-skills">Studio Manager - Barber Crew Wargrave</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\djed.png" alt="Barber Crew Team Djed">
+                <div class="barber-name">Djed</div>
+                <div class="barber-skills">Studio Manager - Barber Crew Wokingham</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\ruby.png" alt="Barber Crew Team Ruby">
+                <div class="barber-name">Ruby</div>
+                <div class="barber-skills">Principal Stylist</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\sunny.png?v=2" alt="Barber Crew Team Sunny">
+                <div class="barber-name">Sunny</div>
+                <div class="barber-skills">Principal Barber</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\alison.png" alt="Barber Crew Team Alison">
+                <div class="barber-name">Alison</div>
+                <div class="barber-skills">Senior Barber</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\aimie.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Aimie</div>
+                <div class="barber-skills">Barber</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\becca.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Becca</div>
+                <div class="barber-skills">Stylist</div>
+            </div>
+            <div>
+                <img width=200px; src="images\team\charlie.png" alt="Barber Crew Team Aimie">
+                <div class="barber-name">Charlie</div>
+                <div class="barber-skills">Barber</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom banner -->
+    <div class="footer_banner">
+        <img class="banner-desktop" src="images/sign-min.jpg" alt="Barber Crew Shop Banner">
+        <img class="banner-mobile" src="images/twyford_shop_interior.jpg" alt="Barber Crew Twyford Swinging Sign">
+    </div>
+
+    <!-- Gallery -->
+    <div class="section-header">
+        <h2 class="section-heading">Gallery</h2>
+        <p class="section-subheading">A sneek peak into the luxury mens, ladies & childrens hair services offered at Barber Crew across our Twyford, Wokingham & Wargrave Studios!</p>
+    </div>
+    <div id="gallery" class="gallery-container">
+        <div class="gallery-slider">
+            <picture>
+                <source srcset="images\gallery\gallery1_min.avif" type="image/avif">
+                <img src="images\gallery\gallery1.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery2_min.avif" type="image/avif">
+                <img src="images\gallery\gallery2.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery3_min.avif" type="image/avif">
+                <img src="images\gallery\gallery3.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Beard">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery4_min.avif" type="image/avif">
+                <img src="images\gallery\gallery4.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Skin Fade & Hair Dye">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery5_min.avif" type="image/avif">
+                <img src="images\gallery\gallery5.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Afro Hair">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery6_min.avif" type="image/avif">
+                <img src="images\gallery\gallery6.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Eyebrow Threading & Beard Trim">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery7_min.avif" type="image/avif">
+                <img src="images\gallery\gallery7.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Junior Children Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery8_min.avif" type="image/avif">
+                <img src="images\gallery\gallery8.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Ladies Long Haircut">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery9_min.avif" type="image/avif">
+                <img src="images\gallery\gallery9.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Professional Beard & Trim">
+            </picture>
+            <picture>
+                <source srcset="images\gallery\gallery10_min.avif" type="image/avif">
+                <img src="images\gallery\gallery10.jpg" alt="Barber Crew Twyford Wargrave Wokingham Barbers Curly Hair & Skin Fade">
+            </picture>
+        </div>
+    </div>
 
     <!-- Statistics -->
     <div style="background-color:#0e2141;" class="counter bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-
                     <!-- Counter -->
                     <div class="counter-container">
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="468" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="5428" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">FOLLOWERS</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="33" data-purecounter-duration="1.5" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1.5" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">SERVICES</div>
                         </div>
                         <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="315" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="1238" data-purecounter-duration="3" class="purecounter">1</div>
                             <div style="color:white;font-size:1.2rem;letter-spacing:0.2rem;" class="counter-info">Five Star Reviews</div>
                         </div>
                         <!-- end of counter-cell -->
@@ -600,18 +588,10 @@
                         </div>
                         <!-- end of counter-cell -->
                     </div>
-                    <!-- end of counter-container -->
-                    <!-- end of counter -->
-
                 </div>
-                <!-- end of col -->
             </div>
-            <!-- end of row -->
         </div>
-        <!-- end of container -->
     </div>
-    <!-- end of counter -->
-    <!-- end of statistics -->
 
     <!-- Contact -->
     <div style="padding-top:80px;" id="contact" class="form-1">
@@ -642,7 +622,7 @@
                     <ul class="list-unstyled li-space-lg">
                         <li style="text-decoration:underline;">WOKINGHAM:</li>
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;31 Broad St, Wokingham RG40 1AU</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189401688">0118 979 4122</a></li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:01189794122">0118 979 4122</a></li>
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">info@barbercrew.co.uk</a></li>
                     </ul>
                     <br>
@@ -683,13 +663,6 @@
         </div>
         <!-- end of container -->
     </div>
-    <!-- end of form-1 -->
-    <!-- end of contact -->
-
-    <!-- Bottom banner -->
-    <div style="color:white;text-align:center;font-size:50px;" style="background-color:#0e2141;">
-        <img style="width:100%; height:100%;" src="images/sign-min.jpg" alt="Barber Crew Shop Banner"></img>
-    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -699,7 +672,8 @@
                 <div class="col-sm-12 col-md-6">
                     <h6 style="text-align:center">About</h6>
                     <p class="footer-mobile text-justify"> At Barber Crew, our talented and experienced team, will make you look and feel great. We are the best in the Twyford, Wargrave & Wokingham areas for Skin Fades, Luxury Hot Shaves, Patterns, Face Waxing & Threading. We also have two
-                        Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's</p>
+                        Hapro Sunbeds for you tan lovers! We serve all the general public, experienced with all hair types, including children, ladies, afro and cater for OAP's.</p>
+                    <p class="footer-mobile text-justify"> Every Barber Crew studio operates with 24/7 audio and video security surveilence.</p>
                 </div>
 
                 <div class="col-xs-6 col-md-3">
@@ -724,8 +698,12 @@
             </div>
             <div class="col-lg-12">
                 <div class="footer-mobile footer-col first">
-                    Copyright &copy; 2021 All Rights Reserved by
-                    <a href="#">Barber Crew</a>.
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved by Barber Crew</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
                 <!-- end of footer-col -->
                 <div class="footer-col second">
@@ -804,6 +782,15 @@
     <!-- Custom scripts -->
     <!-- Include cookiealert script -->
     <script src="js/cookiealert.js?1"></script>
+    <!-- Medium Embed Feed -->
+    <script src="js/mediumfeed.js?v=3.0"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.js?ver=1.1"></script>
+
+
 </body>
 
 </html>
